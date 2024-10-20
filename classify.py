@@ -1,3 +1,4 @@
+import pdb
 import numpy as np
 import dill as pickle
 import tiktoken
@@ -21,7 +22,7 @@ MAX_TOKENS = 2047
 best_features = open("model/features.txt").read().strip().split("\n")
 
 # Load davinci tokenizer
-enc = tiktoken.encoding_for_model("davinci")
+enc = tiktoken.encoding_for_model("babbage-002")
 
 # Load model
 model = pickle.load(open("model/model", "rb"))
@@ -47,8 +48,9 @@ trigram = np.array(score_ngram(doc, trigram_model,
 unigram = np.array(score_ngram(doc, trigram_model.base,
                    enc.encode, n=1, strip_first=False))
 
+
 response = openai.Completion.create(
-    model="text-embedding-ada-002",
+    model="babbage-002",
     prompt="<|endoftext|>" + doc,
     max_tokens=0,
     echo=True,
@@ -58,7 +60,7 @@ ada = np.array(list(map(lambda x: np.exp(
     x), response["choices"][0]["logprobs"]["token_logprobs"][1:])))
 
 response = openai.Completion.create(
-    model="text-embedding-3-small",
+    model="davinci-002",
     prompt="<|endoftext|>" + doc,
     max_tokens=0,
     echo=True,
@@ -67,6 +69,7 @@ response = openai.Completion.create(
 davinci = np.array(list(map(lambda x: np.exp(
     x), response["choices"][0]["logprobs"]["token_logprobs"][1:])))
 
+# pdb.set_trace()
 subwords = response["choices"][0]["logprobs"]["tokens"][1:]
 gpt2_map = {"\n": "Ċ", "\t": "ĉ", " ": "Ġ"}
 for i in range(len(subwords)):
@@ -83,6 +86,7 @@ vector_map = {
 }
 
 exp_features = []
+# pdb.set_trace()
 for exp in best_features:
 
     exp_tokens = get_words(exp)

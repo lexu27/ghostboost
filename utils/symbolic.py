@@ -36,7 +36,8 @@ scalar_functions = {
     "s-l2": np.linalg.norm,
 }
 
-vectors = ["davinci-logprobs", "ada-logprobs", "trigram-logprobs", "unigram-logprobs"]
+vectors = ["davinci-logprobs", "ada-logprobs",
+           "trigram-logprobs", "unigram-logprobs"]
 
 # Get vec_combinations
 vec_combinations = defaultdict(list)
@@ -44,7 +45,8 @@ for vec1 in range(len(vectors)):
     for vec2 in range(vec1):
         for func in vec_functions:
             if func != "v-div":
-                vec_combinations[vectors[vec1]].append(f"{func} {vectors[vec2]}")
+                vec_combinations[vectors[vec1]].append(
+                    f"{func} {vectors[vec2]}")
 
 for vec1 in vectors:
     for vec2 in vectors:
@@ -98,7 +100,7 @@ def train_trigram(verbose=True, return_tokenizer=False):
     Trains and returns a trigram model on the brown corpus
     """
 
-    enc = tiktoken.encoding_for_model("davinci")
+    enc = tiktoken.encoding_for_model("babbage-002")
     tokenizer = enc.encode
     vocab_size = enc.n_vocab
 
@@ -130,7 +132,8 @@ def get_all_logprobs(
     num_tokens=2047,
 ):
     if trigram is None:
-        trigram, tokenizer = train_trigram(verbose=verbose, return_tokenizer=True)
+        trigram, tokenizer = train_trigram(
+            verbose=verbose, return_tokenizer=True)
 
     davinci_logprobs, ada_logprobs = {}, {}
     trigram_logprobs, unigram_logprobs = {}, {}
@@ -153,7 +156,8 @@ def get_all_logprobs(
         ada_logprobs[file] = get_logprobs(convert_file_to_logprob_file(file, "ada"))[
             :num_tokens
         ]
-        trigram_logprobs[file] = score_ngram(doc, trigram, tokenizer, n=3)[:num_tokens]
+        trigram_logprobs[file] = score_ngram(
+            doc, trigram, tokenizer, n=3)[:num_tokens]
         unigram_logprobs[file] = score_ngram(doc, trigram.base, tokenizer, n=1)[
             :num_tokens
         ]
