@@ -42,26 +42,30 @@ print("Loading Trigram...")
 
 trigram_model = train_trigram()
 
-trigram = np.array(score_ngram(doc, trigram_model, enc.encode, n=3, strip_first=False))
-unigram = np.array(score_ngram(doc, trigram_model.base, enc.encode, n=1, strip_first=False))
+trigram = np.array(score_ngram(doc, trigram_model,
+                   enc.encode, n=3, strip_first=False))
+unigram = np.array(score_ngram(doc, trigram_model.base,
+                   enc.encode, n=1, strip_first=False))
 
 response = openai.Completion.create(
-    model="ada",
+    model="text-embedding-ada-002",
     prompt="<|endoftext|>" + doc,
     max_tokens=0,
     echo=True,
     logprobs=1,
 )
-ada = np.array(list(map(lambda x: np.exp(x), response["choices"][0]["logprobs"]["token_logprobs"][1:])))
+ada = np.array(list(map(lambda x: np.exp(
+    x), response["choices"][0]["logprobs"]["token_logprobs"][1:])))
 
 response = openai.Completion.create(
-    model="davinci",
+    model="text-embedding-3-small",
     prompt="<|endoftext|>" + doc,
     max_tokens=0,
     echo=True,
     logprobs=1,
 )
-davinci = np.array(list(map(lambda x: np.exp(x), response["choices"][0]["logprobs"]["token_logprobs"][1:])))
+davinci = np.array(list(map(lambda x: np.exp(
+    x), response["choices"][0]["logprobs"]["token_logprobs"][1:])))
 
 subwords = response["choices"][0]["logprobs"]["tokens"][1:]
 gpt2_map = {"\n": "Ċ", "\t": "ĉ", " ": "Ġ"}

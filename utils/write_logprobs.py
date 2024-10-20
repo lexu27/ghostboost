@@ -9,7 +9,8 @@ from transformers import AutoTokenizer
 
 tokenizer = tiktoken.encoding_for_model("davinci")
 
-llama_tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-hf")
+llama_tokenizer = AutoTokenizer.from_pretrained(
+    "meta-llama/Meta-Llama-3-8B", token="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")
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 vocab_map = {}
@@ -59,7 +60,8 @@ def write_llama_logprobs(text, file, model):
         tokens = encodings["input_ids"]
         indices = torch.tensor([[[i] for i in tokens[0]]])[:, 1:, :].to(device)
 
-        subwords = [vocab_map[int(idx)] for idx in encodings["input_ids"][0][1:]]
+        subwords = [vocab_map[int(idx)]
+                    for idx in encodings["input_ids"][0][1:]]
         subprobs = (
             torch.gather(logits[:, :-1, :], dim=2, index=indices)
             .flatten()
