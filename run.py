@@ -32,11 +32,11 @@ from utils.symbolic import get_all_logprobs, get_exp_featurize, backtrack_functi
 from utils.load import Dataset, get_generate_dataset
 
 from generate import perturb_char_names, perturb_char_sizes
-from generate import perturb_sent_names, perturb_sent_sizes
 
 models = ["gpt"]
 domains = ["wp", "reuter", "essay"]
-eval_domains = ["claude", "gpt_prompt1", "gpt_prompt2", "gpt_writing", "gpt_semantic"]
+eval_domains = ["claude", "gpt_prompt1",
+                "gpt_prompt2", "gpt_writing", "gpt_semantic"]
 
 if torch.cuda.is_available():
     print("Using CUDA...")
@@ -146,6 +146,10 @@ def get_scores(labels, probabilities, calibrated=False, precision=6):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
+    parser.add_argument("--essay_test", action="store_true",
+                        help="Run Ghostbuster on essay data")
+    args = parser.parse_args()
+
     parser.add_argument("--claude", action="store_true")
 
     parser.add_argument("--roberta", action="store_true")
@@ -166,8 +170,10 @@ if __name__ == "__main__":
     parser.add_argument("--ghostbuster_custom", action="store_true")
     parser.add_argument("--ghostbuster_other_eval", action="store_true")
 
-    parser.add_argument("--ghostbuster_vary_training_data", action="store_true")
-    parser.add_argument("--ghostbuster_vary_document_size", action="store_true")
+    parser.add_argument("--ghostbuster_vary_training_data",
+                        action="store_true")
+    parser.add_argument("--ghostbuster_vary_document_size",
+                        action="store_true")
 
     parser.add_argument("--hyperparameter_search", action="store_true")
 
@@ -188,7 +194,7 @@ if __name__ == "__main__":
 
     train, test = (
         indices[: math.floor(0.8 * len(indices))],
-        indices[math.floor(0.8 * len(indices)) :],
+        indices[math.floor(0.8 * len(indices)):],
     )
 
     # [4320 2006 5689 ... 4256 5807 4875] [5378 5980 5395 ... 1653 2607 2732]
@@ -258,7 +264,8 @@ if __name__ == "__main__":
             indices_dict[test_key] = test_indices
 
     for key in eval_domains:
-        where = np.where(generate_dataset_fn(lambda file: 1 if key in file else 0))[0]
+        where = np.where(generate_dataset_fn(
+            lambda file: 1 if key in file else 0))[0]
         assert len(where) == 3000
 
         indices_dict[f"{key}_test"] = list(where)
@@ -393,7 +400,8 @@ if __name__ == "__main__":
             test_indices += indices_dict[f"human_{domain}_test"]
 
         for domain in eval_domains:
-            curr_test_indices = list(indices_dict[f"{domain}_test"]) + test_indices
+            curr_test_indices = list(
+                indices_dict[f"{domain}_test"]) + test_indices
 
             results_table.append(
                 [
@@ -402,6 +410,19 @@ if __name__ == "__main__":
                     *train_fn(data, train_indices, curr_test_indices, "gpt"),
                 ]
             )
+    if args.essay_test:
+        # Load the essay datasets
+        essay_datasets = [
+            Dataset("normal", "data/essay/human"),
+            Dataset("normal", "data/essay/gpt"),
+        ]
+        generate_dataset_fn = get_generate_dataset(*essay_datasets)
+        # Run the experiment
+        run_experiment(
+            best_features_map["best_features_essay"],
+            "Ghostbuster Essay Test",
+            generate_dataset_fn
+        )
 
     if args.perplexity_only:
         run_experiment(
@@ -578,19 +599,21 @@ if __name__ == "__main__":
                 np.random.shuffle(indices)
 
                 train_indices = indices[: math.floor(0.8 * len(indices))]
-                test_indices = indices[math.floor(0.8 * len(indices)) :]
+                test_indices = indices[math.floor(0.8 * len(indices)):]
 
                 curr_train_data = np.concatenate(
                     [
                         curr_data[train_indices],
-                        data[indices_dict["gpt_train"] + indices_dict["human_train"]],
+                        data[indices_dict["gpt_train"] +
+                             indices_dict["human_train"]],
                     ],
                     axis=0,
                 )
                 curr_train_labels = np.concatenate(
                     [
                         curr_labels[train_indices],
-                        labels[indices_dict["gpt_train"] + indices_dict["human_train"]],
+                        labels[indices_dict["gpt_train"] +
+                               indices_dict["human_train"]],
                     ],
                     axis=0,
                 )
@@ -617,7 +640,8 @@ if __name__ == "__main__":
                 )
 
         for dataset in ["lang8"]:
-            gen_fn = get_generate_dataset(Dataset("normal", f"data/other/{dataset}"))
+            gen_fn = get_generate_dataset(
+                Dataset("normal", f"data/other/{dataset}"))
             curr_labels = gen_fn(lambda _: 0)
 
             evaluate_on_dataset(
@@ -635,7 +659,8 @@ if __name__ == "__main__":
                 exp_to_data["davinci-logprobs s-avg"][
                     indices_dict["gpt_train"] + indices_dict["human_train"]
                 ],
-                labels[indices_dict["gpt_train"] + indices_dict["human_train"]],
+                labels[indices_dict["gpt_train"] +
+                       indices_dict["human_train"]],
             )
 
             probs = model_p.predict_proba(exp_data)[:, 1]
@@ -813,11 +838,13 @@ if __name__ == "__main__":
         )
 
         # Do with perplexity only
-        perplxity_data = get_featurized_data(["davinci-logprobs s-avg"], gpt_only=True)
+        perplxity_data = get_featurized_data(
+            ["davinci-logprobs s-avg"], gpt_only=True)
 
         perplexity_model = LogisticRegression()
         perplexity_model.fit(
-            perplxity_data[indices_dict["gpt_train"] + indices_dict["human_train"]],
+            perplxity_data[indices_dict["gpt_train"] +
+                           indices_dict["human_train"]],
             labels[indices_dict["gpt_train"] + indices_dict["human_train"]],
         )
 
@@ -827,7 +854,8 @@ if __name__ == "__main__":
             [
                 "Perplexity Only",
                 f"Out-Domain (toefl)",
-                accuracy_score(toefl_labels, perplexity_model.predict(toefl_data)),
+                accuracy_score(
+                    toefl_labels, perplexity_model.predict(toefl_data)),
             ]
         )
 
@@ -859,13 +887,15 @@ if __name__ == "__main__":
             [
                 "RoBERTa",
                 f"Out-Domain (toefl)",
-                accuracy_score(toefl_labels, np.array(roberta_predictions) > 0.5),
+                accuracy_score(toefl_labels, np.array(
+                    roberta_predictions) > 0.5),
             ]
         )
 
         results_table.append(["GPT Zero", f"Out-Domain (toefl)", 0.923077])
 
-        results_table.append(["DetectGPT", f"Out-Domain (toefl)", 0.6373626373626373])
+        results_table.append(
+            ["DetectGPT", f"Out-Domain (toefl)", 0.6373626373626373])
 
     if args.ghostbuster_vary_training_data:
         exp_to_data_three = pickle.load(open("symbolic_data_gpt", "rb"))
@@ -879,7 +909,8 @@ if __name__ == "__main__":
         )
 
         scores = []
-        train_sizes = [int(125 * (2**i)) for i in range(6)] + [len(train_indices)]
+        train_sizes = [int(125 * (2**i))
+                       for i in range(6)] + [len(train_indices)]
         print(train_sizes)
 
         for size in tqdm.tqdm(train_sizes):
@@ -902,7 +933,8 @@ if __name__ == "__main__":
             model.fit(data[curr_train_indices], labels[curr_train_indices])
 
             curr_score_vec.append(
-                f1_score(labels[test_indices], model.predict(data[test_indices]))
+                f1_score(labels[test_indices],
+                         model.predict(data[test_indices]))
             )
 
             curr_score_vec.append(
@@ -934,7 +966,8 @@ if __name__ == "__main__":
                 )
 
                 model = LogisticRegression()
-                model.fit(data[domain_train_indices], labels[domain_train_indices])
+                model.fit(data[domain_train_indices],
+                          labels[domain_train_indices])
 
                 curr_score_vec.append(
                     f1_score(
@@ -1005,7 +1038,8 @@ if __name__ == "__main__":
             model.fit(data[train_indices], labels[train_indices])
 
             curr_score_vec.append(
-                f1_score(labels[test_indices], model.predict(curr_data[test_indices]))
+                f1_score(labels[test_indices], model.predict(
+                    curr_data[test_indices]))
             )
 
             curr_score_vec.append(
@@ -1037,7 +1071,8 @@ if __name__ == "__main__":
                 )
 
                 model = LogisticRegression()
-                model.fit(data[domain_train_indices], labels[domain_train_indices])
+                model.fit(data[domain_train_indices],
+                          labels[domain_train_indices])
 
                 curr_score_vec.append(
                     f1_score(
@@ -1067,7 +1102,8 @@ if __name__ == "__main__":
         plt.savefig("results/document_size.png")
 
     if args.hyperparameter_search:
-        data = normalize(get_featurized_data(best_features_map["best_features_three"]))
+        data = normalize(get_featurized_data(
+            best_features_map["best_features_three"]))
 
         param_grid = {
             "C": [
@@ -1216,7 +1252,8 @@ if __name__ == "__main__":
 
             ece = 0.0
             for bin_lower, bin_upper in zip(bin_lowers, bin_uppers):
-                in_bin = np.logical_and(bin_lower <= y_probs, y_probs < bin_upper)
+                in_bin = np.logical_and(
+                    bin_lower <= y_probs, y_probs < bin_upper)
                 prop_in_bin = np.mean(in_bin)
                 if prop_in_bin > 0:
                     y_true_bin = y_true[in_bin]
