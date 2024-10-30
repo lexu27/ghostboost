@@ -178,9 +178,9 @@ answer.csv
 playground.ipynb
 t_data
 
-data/wp/raw
-data/reuter/raw
-data/essay/raw
+# data/wp/raw
+# data/reuter/raw
+# data/essay/raw
 
 roberta/models_old
 roberta/models_bak
@@ -196,5 +196,5 @@ ghostbuster_stats.ipynb
 *.ipynb
 
 temp
-data
+# data
 rebuttal.py
