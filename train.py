@@ -41,20 +41,20 @@ essay_dataset = [
 ]
 
 eval_dataset = [
-    Dataset("normal", "data/wp/claude"),
-    Dataset("author", "data/reuter/claude"),
+    # Dataset("normal", "data/wp/claude"),
+    # Dataset("author", "data/reuter/claude"),
     Dataset("normal", "data/essay/claude"),
-    Dataset("normal", "data/wp/gpt_prompt1"),
-    Dataset("author", "data/reuter/gpt_prompt1"),
+    # Dataset("normal", "data/wp/gpt_prompt1"),
+    # Dataset("author", "data/reuter/gpt_prompt1"),
     Dataset("normal", "data/essay/gpt_prompt1"),
-    Dataset("normal", "data/wp/gpt_prompt2"),
-    Dataset("author", "data/reuter/gpt_prompt2"),
+    # Dataset("normal", "data/wp/gpt_prompt2"),
+    # Dataset("author", "data/reuter/gpt_prompt2"),
     Dataset("normal", "data/essay/gpt_prompt2"),
-    Dataset("normal", "data/wp/gpt_writing"),
-    Dataset("author", "data/reuter/gpt_writing"),
+    # Dataset("normal", "data/wp/gpt_writing"),
+    # Dataset("author", "data/reuter/gpt_writing"),
     Dataset("normal", "data/essay/gpt_writing"),
-    Dataset("normal", "data/wp/gpt_semantic"),
-    Dataset("author", "data/reuter/gpt_semantic"),
+    # Dataset("normal", "data/wp/gpt_semantic"),
+    # Dataset("author", "data/reuter/gpt_semantic"),
     Dataset("normal", "data/essay/gpt_semantic"),
 ]
 
