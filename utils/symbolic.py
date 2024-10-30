@@ -100,7 +100,7 @@ def train_trigram(verbose=True, return_tokenizer=False):
     Trains and returns a trigram model on the brown corpus
     """
 
-    enc = tiktoken.encoding_for_model("davinci")
+    enc = tiktoken.encoding_for_model("babbage-002")
     tokenizer = enc.encode
     vocab_size = enc.n_vocab
 
