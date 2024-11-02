@@ -198,3 +198,6 @@ ghostbuster_stats.ipynb
 temp
 # data
 rebuttal.py
+
+.vscode
+ghostbooster-env/
