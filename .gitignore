@@ -176,7 +176,7 @@ results.csv
 question.csv
 answer.csv
 playground.ipynb
-t_data
+# t_data
 
 # data/wp/raw
 # data/reuter/raw
@@ -185,8 +185,8 @@ t_data
 roberta/models_old
 roberta/models_bak
 roberta/models*
-symbolic_data*
-t_data*
+# symbolic_data*
+# t_data*
 
 eve.csv
 gpt_zero.ipynb
