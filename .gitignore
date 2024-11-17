@@ -185,7 +185,7 @@ playground.ipynb
 roberta/models_old
 roberta/models_bak
 roberta/models*
-# symbolic_data*
+symbolic_data*
 # t_data*
 
 eve.csv
