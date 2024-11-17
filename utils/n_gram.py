@@ -9,9 +9,10 @@ class NGramModel:
 
     def __init__(self, train_text, n=2, alpha=3e-3, vocab_size=None):
         self.n = n
-        if vocab_size is None:
-            # Assume GPT tokenizer
-            self.vocab_size = 50257
+        self.vocab_size = vocab_size
+        # if vocab_size is None:
+        #     # Assume GPT tokenizer
+        #     self.vocab_size = 50257
 
         self.smoothing = alpha
         self.smoothing_f = alpha * self.vocab_size
@@ -35,8 +36,8 @@ class DiscountBackoffModel(NGramModel):
     An n-gram model with discounting and backoff. Delta is the discounting parameter.
     """
 
-    def __init__(self, train_text, lower_order_model, n=2, delta=0.9):
-        super().__init__(train_text, n=n)
+    def __init__(self, train_text, lower_order_model, n=2, delta=0.9, vocab_size=None):
+        super().__init__(train_text, n=n, vocab_size=vocab_size)
         self.lower_order_model = lower_order_model
         self.discount = delta
 
@@ -91,12 +92,13 @@ class TrigramBackoff:
     A trigram model with discounting and backoff. Uses a Kneser-Ney base model.
     """
 
-    def __init__(self, train_text, delta=0.9):
-        self.base = KneserNeyBaseModel(train_text)
+    def __init__(self, train_text, vocab_size, delta=0.9):
+        self.vocab_size = vocab_size
+        self.base = KneserNeyBaseModel(train_text, vocab_size=vocab_size)
         self.bigram = DiscountBackoffModel(
-            train_text, self.base, n=2, delta=delta)
+            train_text, self.base, n=2, delta=delta, vocab_size=vocab_size)
         self.trigram = DiscountBackoffModel(
-            train_text, self.bigram, n=3, delta=delta)
+            train_text, self.bigram, n=3, delta=delta, vocab_size=vocab_size)
 
     def n_gram_probability(self, n_gram):
         assert len(n_gram) == 3

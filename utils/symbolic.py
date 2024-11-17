@@ -13,6 +13,8 @@ from utils.n_gram import *
 from collections import Counter, defaultdict
 from sklearn.linear_model import LogisticRegression
 
+import pandas as pd
+import re
 
 vec_functions = {
     "v-add": lambda a, b: a + b,
@@ -118,9 +120,9 @@ def train_trigram(verbose=True, return_tokenizer=False):
         print("\nTraining n-gram model...")
 
     if return_tokenizer:
-        return TrigramBackoff(tokenized_corpus), tokenizer
+        return TrigramBackoff(tokenized_corpus, vocab_size), tokenizer
     else:
-        return TrigramBackoff(tokenized_corpus)
+        return TrigramBackoff(tokenized_corpus, vocab_size)
 
 
 def get_all_logprobs(
@@ -142,14 +144,18 @@ def get_all_logprobs(
         print("Loading logprobs into memory")
 
     file_names = generate_dataset(lambda file: file, verbose=False)
-    to_iter = tqdm.tqdm(file_names) if verbose else file_names
+    to_iter = tqdm.tqdm(
+        sorted(file_names, key=lambda x: int(x.split("/")[-1].split(".")[0]))) if verbose else file_names
 
-    for file in to_iter:
+    for i, file in enumerate(to_iter):
+        if (i == 500):
+            break
         if "logprobs" in file:
             continue
 
         with open(file, "r") as f:
             doc = preprocess(f.read())
+
         davinci_logprobs[file] = get_logprobs(
             convert_file_to_logprob_file(file, "davinci")
         )[:num_tokens]
@@ -183,6 +189,25 @@ def generate_symbolic_data(
             trigram_logprobs,
             unigram_logprobs,
         ) = get_all_logprobs(generate_dataset, preprocess=preprocess, verbose=verbose)
+
+        ## Debugging ##
+        ada_shapes = list(map(lambda x: x.shape, list(ada_logprobs.values())))
+        trigram_shapes = list(map(lambda x: x.shape,
+                                  list(trigram_logprobs.values())))
+        davinci_shapes = list(map(lambda x: x.shape,
+                                  list(davinci_logprobs.values())))
+        unigram_shapes = list(map(lambda x: x.shape,
+                                  list(unigram_logprobs.values())))
+
+        data = np.array([ada_shapes, davinci_shapes,
+                        trigram_shapes, unigram_shapes]).T.squeeze()
+        import pdb
+        pdb.set_trace()
+
+        out = pd.DataFrame(data=data, columns=[
+            "Ada", "Davinci", "Trigram", "Unigram"])
+
+        out.to_csv("debugging.csv")
 
         vector_map = {
             "davinci-logprobs": lambda file: davinci_logprobs[file],

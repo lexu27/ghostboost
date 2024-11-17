@@ -1,3 +1,4 @@
+import pdb
 import argparse
 import math
 import numpy as np
@@ -23,7 +24,8 @@ print("Loading trigram model...")
 trigram_model = pickle.load(
     open("model/trigram_model.pkl", "rb"), pickle.HIGHEST_PROTOCOL
 )
-tokenizer = tiktoken.encoding_for_model("davinci").encode
+# pdb.set_trace()
+tokenizer = tiktoken.encoding_for_model("babbage-002").encode
 
 wp_dataset = [
     Dataset("normal", "data/wp/human"),
