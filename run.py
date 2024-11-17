@@ -69,29 +69,29 @@ print("Loading eval data...")
 roberta_tokenizer = RobertaTokenizer.from_pretrained("roberta-base")
 
 datasets = [
-    Dataset("normal", "data/wp/human"),
-    Dataset("normal", "data/wp/gpt"),
-    Dataset("author", "data/reuter/human"),
-    Dataset("author", "data/reuter/gpt"),
+    # Dataset("normal", "data/wp/human"),
+    # Dataset("normal", "data/wp/gpt"),
+    # Dataset("author", "data/reuter/human"),
+    # Dataset("author", "data/reuter/gpt"),
     Dataset("normal", "data/essay/human"),
     Dataset("normal", "data/essay/gpt"),
 ]
 
 eval_dataset = [
-    Dataset("normal", "data/wp/claude"),
-    Dataset("author", "data/reuter/claude"),
+    # Dataset("normal", "data/wp/claude"),
+    # Dataset("author", "data/reuter/claude"),
     Dataset("normal", "data/essay/claude"),
-    Dataset("normal", "data/wp/gpt_prompt1"),
-    Dataset("author", "data/reuter/gpt_prompt1"),
+    # Dataset("normal", "data/wp/gpt_prompt1"),
+    # Dataset("author", "data/reuter/gpt_prompt1"),
     Dataset("normal", "data/essay/gpt_prompt1"),
-    Dataset("normal", "data/wp/gpt_prompt2"),
-    Dataset("author", "data/reuter/gpt_prompt2"),
+    # Dataset("normal", "data/wp/gpt_prompt2"),
+    # Dataset("author", "data/reuter/gpt_prompt2"),
     Dataset("normal", "data/essay/gpt_prompt2"),
-    Dataset("normal", "data/wp/gpt_writing"),
-    Dataset("author", "data/reuter/gpt_writing"),
+    # Dataset("normal", "data/wp/gpt_writing"),
+    # Dataset("author", "data/reuter/gpt_writing"),
     Dataset("normal", "data/essay/gpt_writing"),
-    Dataset("normal", "data/wp/gpt_semantic"),
-    Dataset("author", "data/reuter/gpt_semantic"),
+    # Dataset("normal", "data/wp/gpt_semantic"),
+    # Dataset("author", "data/reuter/gpt_semantic"),
     Dataset("normal", "data/essay/gpt_semantic"),
 ]
 
@@ -145,10 +145,6 @@ def get_scores(labels, probabilities, calibrated=False, precision=6):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-
-    parser.add_argument("--essay_test", action="store_true",
-                        help="Run Ghostbuster on essay data")
-    args = parser.parse_args()
 
     parser.add_argument("--claude", action="store_true")
 
@@ -266,7 +262,10 @@ if __name__ == "__main__":
     for key in eval_domains:
         where = np.where(generate_dataset_fn(
             lambda file: 1 if key in file else 0))[0]
-        assert len(where) == 3000
+
+        import pdb
+        pdb.set_trace()
+        # assert len(where) == 3000
 
         indices_dict[f"{key}_test"] = list(where)
 
@@ -410,19 +409,19 @@ if __name__ == "__main__":
                     *train_fn(data, train_indices, curr_test_indices, "gpt"),
                 ]
             )
-    if args.essay_test:
-        # Load the essay datasets
-        essay_datasets = [
-            Dataset("normal", "data/essay/human"),
-            Dataset("normal", "data/essay/gpt"),
-        ]
-        generate_dataset_fn = get_generate_dataset(*essay_datasets)
-        # Run the experiment
-        run_experiment(
-            best_features_map["best_features_essay"],
-            "Ghostbuster Essay Test",
-            generate_dataset_fn
-        )
+    # if args.essay_test:
+    #     # Load the essay datasets
+    #     essay_datasets = [
+    #         Dataset("normal", "data/essay/human"),
+    #         Dataset("normal", "data/essay/gpt"),
+    #     ]
+    #     generate_dataset_fn = get_generate_dataset(*essay_datasets)
+    #     # Run the experiment
+    #     run_experiment(
+    #         best_features_map["best_features_essay"],
+    #         "Ghostbuster Essay Test",
+    #         generate_dataset_fn
+    #     )
 
     if args.perplexity_only:
         run_experiment(

@@ -144,12 +144,11 @@ def get_all_logprobs(
         print("Loading logprobs into memory")
 
     file_names = generate_dataset(lambda file: file, verbose=False)
+
     to_iter = tqdm.tqdm(
-        sorted(file_names, key=lambda x: int(x.split("/")[-1].split(".")[0]))) if verbose else file_names
+        sorted(file_names, key=lambda x: int(x.split("/")[-1].split(".")[0])))
 
     for i, file in enumerate(to_iter):
-        if (i == 500):
-            break
         if "logprobs" in file:
             continue
 
@@ -168,6 +167,8 @@ def get_all_logprobs(
             :num_tokens
         ]
 
+    # import pdb
+    # pdb.set_trace()
     return davinci_logprobs, ada_logprobs, trigram_logprobs, unigram_logprobs
 
 
@@ -191,23 +192,23 @@ def generate_symbolic_data(
         ) = get_all_logprobs(generate_dataset, preprocess=preprocess, verbose=verbose)
 
         ## Debugging ##
-        ada_shapes = list(map(lambda x: x.shape, list(ada_logprobs.values())))
-        trigram_shapes = list(map(lambda x: x.shape,
-                                  list(trigram_logprobs.values())))
-        davinci_shapes = list(map(lambda x: x.shape,
-                                  list(davinci_logprobs.values())))
-        unigram_shapes = list(map(lambda x: x.shape,
-                                  list(unigram_logprobs.values())))
+        # ada_shapes = list(map(lambda x: x.shape, list(ada_logprobs.values())))
+        # trigram_shapes = list(map(lambda x: x.shape,
+        #                           list(trigram_logprobs.values())))
+        # davinci_shapes = list(map(lambda x: x.shape,
+        #                           list(davinci_logprobs.values())))
+        # unigram_shapes = list(map(lambda x: x.shape,
+        #                           list(unigram_logprobs.values())))
 
-        data = np.array([ada_shapes, davinci_shapes,
-                        trigram_shapes, unigram_shapes]).T.squeeze()
-        import pdb
-        pdb.set_trace()
+        # data = np.array([ada_shapes, davinci_shapes,
+        #                 trigram_shapes, unigram_shapes]).T.squeeze()
+        # import pdb
+        # pdb.set_trace()
 
-        out = pd.DataFrame(data=data, columns=[
-            "Ada", "Davinci", "Trigram", "Unigram"])
+        # out = pd.DataFrame(data=data, columns=[
+        #     "Ada", "Davinci", "Trigram", "Unigram"])
 
-        out.to_csv("debugging.csv")
+        # out.to_csv("debugging.csv")
 
         vector_map = {
             "davinci-logprobs": lambda file: davinci_logprobs[file],

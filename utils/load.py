@@ -52,15 +52,17 @@ def get_generate_dataset(*datasets: Dataset):
             if dataset.type == "normal":
                 files += get_generate_dataset_normal(dataset.path)
             elif dataset.type == "author":
-                files += get_generate_dataset_author(dataset.path, author=author)
+                files += get_generate_dataset_author(
+                    dataset.path, author=author)
 
         if split is not None:
             files = np.array(files)[split]
 
         data = []
-        files = tqdm.tqdm(files) if verbose else files
+        files = tqdm.tqdm(sorted(files, key=lambda x: int(
+            x.split("/")[-1].split(".")[0])))
 
-        for file in files:
+        for i, file in enumerate(files):
             if "logprobs" in file:
                 continue
             data.append(featurize(file))
