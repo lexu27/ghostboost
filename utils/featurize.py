@@ -24,7 +24,8 @@ def get_tokens(file):
     Returns a list of all tokens from a given logprobs file
     """
     with open(file) as f:
-        tokens = list(map(lambda x: x.split(" ")[0], f.read().strip().split("\n")))
+        tokens = list(map(lambda x: x.split(
+            " ")[0], f.read().strip().split("\n")))
     return tokens
 
 
@@ -58,7 +59,7 @@ def convolve(X, window=100):
     """
     ret = []
     for i in range(len(X) - window):
-        ret.append(np.mean(X[i : i + window]))
+        ret.append(np.mean(X[i: i + window]))
     return np.array(ret)
 
 
@@ -111,6 +112,8 @@ def convert_file_to_logprob_file(file_name, model):
 
 
 def t_featurize_logprobs(davinci_logprobs, ada_logprobs, tokens):
+    # import pdb
+    # pdb.set_trace()
     X = []
 
     outliers = []

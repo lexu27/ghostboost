@@ -149,6 +149,8 @@ def get_all_logprobs(
         sorted(file_names, key=lambda x: int(x.split("/")[-1].split(".")[0])))
 
     for i, file in enumerate(to_iter):
+        if i > 50:
+            break
         if "logprobs" in file:
             continue
 
@@ -242,6 +244,9 @@ def generate_symbolic_data(
         exp_to_data[exp] = generate_dataset(
             lambda file: calc_features(file, exp)
         ).reshape(-1, 1)
+
+        import pdb
+        pdb.set_trace()
 
     pickle.dump(exp_to_data, open(output_file, "wb"))
 

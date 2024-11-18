@@ -41,6 +41,11 @@ eval_domains = ["claude", "gpt_prompt1",
 if torch.cuda.is_available():
     print("Using CUDA...")
     device = torch.device("cuda")
+
+elif torch.backends.mps.is_available():
+    print("Using M4")
+    device = torch.device("mps")
+
 else:
     print("Using CPU...")
     device = torch.device("cpu")

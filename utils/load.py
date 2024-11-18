@@ -63,6 +63,8 @@ def get_generate_dataset(*datasets: Dataset):
             x.split("/")[-1].split(".")[0])))
 
         for i, file in enumerate(files):
+            if i > 50:
+                break
             if "logprobs" in file:
                 continue
             data.append(featurize(file))
