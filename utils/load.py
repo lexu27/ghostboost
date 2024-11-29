@@ -59,12 +59,12 @@ def get_generate_dataset(*datasets: Dataset):
             files = np.array(files)[split]
 
         data = []
-        files = tqdm.tqdm(sorted(files, key=lambda x: int(
-            x.split("/")[-1].split(".")[0])))
+        files = sorted(files, key=lambda x: int(
+            x.split("/")[-1].split(".")[0]))
 
-        for i, file in enumerate(files):
-            if i > 50:
-                break
+        for i, file in enumerate(tqdm.tqdm(files)):
+            # if i > 50:
+            #     break
             if "logprobs" in file:
                 continue
             data.append(featurize(file))

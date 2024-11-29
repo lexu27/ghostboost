@@ -34,7 +34,7 @@ from utils.load import Dataset, get_generate_dataset
 from generate import perturb_char_names, perturb_char_sizes
 
 models = ["gpt"]
-domains = ["wp", "reuter", "essay"]
+domains = ["essay"]
 eval_domains = ["claude", "gpt_prompt1",
                 "gpt_prompt2", "gpt_writing", "gpt_semantic"]
 
@@ -68,8 +68,8 @@ exp_to_data = pickle.load(open("symbolic_data_gpt", "rb"))
 t_data = pickle.load(open("t_data", "rb"))
 
 print("Loading eval data...")
-# exp_to_data_eval = pickle.load(open("symbolic_data_eval", "rb"))
-# t_data_eval = pickle.load(open("t_data_eval", "rb"))
+exp_to_data_eval = pickle.load(open("symbolic_data_eval", "rb"))
+t_data_eval = pickle.load(open("t_data_eval", "rb"))
 
 roberta_tokenizer = RobertaTokenizer.from_pretrained("roberta-base")
 
@@ -190,7 +190,7 @@ if __name__ == "__main__":
     np.random.seed(args.seed)
     # Construct the test/train split. Seed of 0 ensures seriality across
     # all files performing the same split.
-    indices = np.arange(6000)
+    indices = np.arange(1988)
     np.random.shuffle(indices)
 
     train, test = (
@@ -223,7 +223,7 @@ if __name__ == "__main__":
 
     def get_featurized_data(best_features, gpt_only=False):
         gpt_data = np.concatenate(
-            [t_data] + [exp_to_data[i] for i in best_features], axis=1
+            [t_data] + [exp_to_data[i] for i in best_features if i in exp_to_data.keys()], axis=1
         )
         if gpt_only:
             return gpt_data
@@ -257,6 +257,8 @@ if __name__ == "__main__":
             train_key = f"{model}_{domain}_train"
             test_key = f"{model}_{domain}_test"
 
+            # import pdb
+            # pdb.set_trace()
             train_indices, test_indices = get_indices(
                 lambda file: 1 if domain in file and model in file else 0,
             )
@@ -268,8 +270,8 @@ if __name__ == "__main__":
         where = np.where(generate_dataset_fn(
             lambda file: 1 if key in file else 0))[0]
 
-        import pdb
-        pdb.set_trace()
+        # import pdb
+        # pdb.set_trace()
         # assert len(where) == 3000
 
         indices_dict[f"{key}_test"] = list(where)
@@ -324,6 +326,8 @@ if __name__ == "__main__":
         return get_scores(labels[test], probs)
 
     def run_experiment(best_features, model_name, train_fn, gpt_only=True):
+        # import pdb
+        # pdb.set_trace()
         gpt_data = get_featurized_data(best_features, gpt_only=True)
         _, mu, sigma = normalize(gpt_data, ret_mu_sigma=True)
 
@@ -367,30 +371,32 @@ if __name__ == "__main__":
             ]
         )
 
-        for test_domain in domains:
-            train_indices = []
-            for train_domain in domains:
-                if train_domain == test_domain:
-                    continue
+        # for test_domain in domains:
+        #     import pdb
+        #     pdb.set_trace()
+        #     train_indices = []
+        #     for train_domain in domains:
+        #         # if train_domain == test_domain:
+        #         #     continue
 
-                train_indices += (
-                    indices_dict[f"gpt_{train_domain}_train"]
-                    + indices_dict[f"human_{train_domain}_train"]
-                )
+        #         train_indices += (
+        #             indices_dict[f"gpt_{train_domain}_train"]
+        #             + indices_dict[f"human_{train_domain}_train"]
+        #         )
 
-            results_table.append(
-                [
-                    model_name,
-                    f"Out-Domain ({test_domain})",
-                    *train_fn(
-                        data,
-                        train_indices,
-                        indices_dict[f"gpt_{test_domain}_test"]
-                        + indices_dict[f"human_{test_domain}_test"],
-                        test_domain,
-                    ),
-                ]
-            )
+        #     results_table.append(
+        #         [
+        #             model_name,
+        #             f"Out-Domain ({test_domain})",
+        #             *train_fn(
+        #                 data,
+        #                 train_indices,
+        #                 indices_dict[f"gpt_{test_domain}_test"]
+        #                 + indices_dict[f"human_{test_domain}_test"],
+        #                 test_domain,
+        #             ),
+        #         ]
+        #     )
 
         if gpt_only:
             return
@@ -904,17 +910,27 @@ if __name__ == "__main__":
     if args.ghostbuster_vary_training_data:
         exp_to_data_three = pickle.load(open("symbolic_data_gpt", "rb"))
 
+        # import pdb
+        # pdb.set_trace()
+
         train_indices = indices_dict["gpt_train"] + indices_dict["human_train"]
-        test_indices = indices_dict["gpt_test"] + indices_dict["human_test"]
+        test_indices = indices_dict["gpt_test"] + indices_dict["human_test"] + \
+            indices_dict["claude_test"] + indices_dict["gpt_prompt1_test"] + indices_dict["gpt_prompt2_test"] + \
+            indices_dict["gpt_writing_test"] + \
+            indices_dict["gpt_semantic_test"]
         np.random.shuffle(train_indices)
 
-        claude_test_indices = (
-            list(indices_dict["claude_test"]) + indices_dict["human_test"]
-        )
+        # claude_test_indices = (
+        #     list(indices_dict["claude_test"]) + indices_dict["human_test"]
+        # )
 
         scores = []
-        train_sizes = [int(125 * (2**i))
-                       for i in range(6)] + [len(train_indices)]
+        # train_sizes = [int(125 * (2**i))
+        #                for i in range(6)] + [len(train_indices)]
+        train_sizes = [50, 100, 250, 500, 1000, 1500]
+
+        # import pdb
+        # pdb.set_trace()
         print(train_sizes)
 
         for size in tqdm.tqdm(train_sizes):
@@ -941,44 +957,44 @@ if __name__ == "__main__":
                          model.predict(data[test_indices]))
             )
 
-            curr_score_vec.append(
-                f1_score(
-                    labels[claude_test_indices],
-                    model.predict(data[claude_test_indices]),
-                )
-            )
+            # curr_score_vec.append(
+            #     f1_score(
+            #         labels[claude_test_indices],
+            #         model.predict(data[claude_test_indices]),
+            #     )
+            # )
 
-            for test_domain in domains:
-                domain_train_indices = []
+            # for test_domain in domains:
+            #     domain_train_indices = []
 
-                for train_domain in domains:
-                    if train_domain == test_domain:
-                        continue
+            #     for train_domain in domains:
+            #         # if train_domain == test_domain:
+            #         #     continue
 
-                    domain_train_indices += (
-                        indices_dict[f"gpt_{train_domain}_train"]
-                        + indices_dict[f"human_{train_domain}_train"]
-                    )
+            #         domain_train_indices += (
+            #             indices_dict[f"gpt_{train_domain}_train"]
+            #             + indices_dict[f"human_{train_domain}_train"]
+            #         )
 
-                domain_train_indices = np.intersect1d(
-                    domain_train_indices, curr_train_indices
-                )
+            #     domain_train_indices = np.intersect1d(
+            #         domain_train_indices, curr_train_indices
+            #     )
 
-                domain_test_indices = (
-                    indices_dict[f"gpt_{test_domain}_test"]
-                    + indices_dict[f"human_{test_domain}_test"]
-                )
+            #     domain_test_indices = (
+            #         indices_dict[f"gpt_{test_domain}_test"]
+            #         + indices_dict[f"human_{test_domain}_test"]
+            #     )
 
-                model = LogisticRegression()
-                model.fit(data[domain_train_indices],
-                          labels[domain_train_indices])
+            #     model = LogisticRegression()
+            #     model.fit(data[domain_train_indices],
+            #               labels[domain_train_indices])
 
-                curr_score_vec.append(
-                    f1_score(
-                        labels[domain_test_indices],
-                        model.predict(data[domain_test_indices]),
-                    )
-                )
+            #     curr_score_vec.append(
+            #         f1_score(
+            #             labels[domain_test_indices],
+            #             model.predict(data[domain_test_indices]),
+            #         )
+            #     )
             scores.append(curr_score_vec)
 
         scores = np.array(scores)
@@ -1031,6 +1047,8 @@ if __name__ == "__main__":
             exp_featurize = get_exp_featurize(
                 best_features_map["best_features_three"], vector_map
             )
+            import pdb
+            pdb.set_trace()
             curr_exp_data = generate_dataset_fn(exp_featurize)
             curr_data = np.concatenate([curr_t_data, curr_exp_data], axis=1)
             curr_data = normalize(curr_data, mu=mu, sigma=sigma)
@@ -1057,8 +1075,8 @@ if __name__ == "__main__":
                 domain_train_indices = []
 
                 for train_domain in domains:
-                    if train_domain == test_domain:
-                        continue
+                    # if train_domain == test_domain:
+                    #     continue
 
                     domain_train_indices += (
                         indices_dict[f"gpt_{train_domain}_train"]
