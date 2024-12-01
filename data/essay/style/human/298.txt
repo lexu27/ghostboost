@@ -1,0 +1,51 @@
+Hadoop and How It Works
+
+Hadoop is a free platform that many people use to store and work with lots of data. It helps make it easier to study huge amounts of data on different computers. Using one computer to study big data is possible, but connecting computers together through networking makes the work faster. Hadoop is a very important tool today because we collect and work with more and more big data. Different groups use this data for many reasons, like studying how people shop. So, leaders need to create good plans to understand these different details better. When we don't understand clearly, it can lead to making decisions based on opinions rather than knowing important facts.
+
+Big Data and Why It's Important
+
+Many organizations look at big data to get useful information about new trends in their field. Many people over the years have used systems in areas like healthcare and law to help them. It's easier to use big data to study a specific idea better. Taking care of data plays a big role in understanding how people act and patterns. Also, using big data helps artificial intelligence work better. So, it's up to different people to use big data to help their companies do well in the market. Companies use data to learn about their customers and trends, then they design marketing plans based on what people like.
+
+Hadoop's Data Security
+
+Hadoop is a safe way to manage data because it uses smart codes and storage structures. To avoid overloading one computer, it's important to spread the work across many computers. This way, we can gather details from different areas and study them. For example, when we use Hadoop in a healthcare place, we can learn about patient recovery and re-hospitalization rates. Doctors also focus on common issues leading to certain health conditions. Big data helps us know more about people's habits and how it affects their health. By using this data, we can understand why doctors need more health details. Hadoop keeps us safe by giving us clear insights into specific issues, like healthcare quality.
+
+Why Hadoop is Great for Data Analysis
+
+I suggest using Hadoop for managing big data because it helps us work better. Having good ways to study big data helps companies understand customer behaviors more. Apart from knowing customers, other groups study changes in different systems. For example, they study weather changes to show how the climate is changing. It's important for key people to keep using Hadoop because it helps us study details in a dynamic way. Hadoop is a big help in making and following good plans. As technology grows, we get more big data every day. So, companies that study data are looking for ways, like using Hadoop, to keep up with changes. That's why Hadoop is a good choice for many industries and jobs.
+
+Hadoop's Codes and Their Meaning
+
+In Hadoop, there are special codes that make the system work well. Two important codes are mapper and reducer, which help organize big datasets using a "divide and conquer" method. Programmers use these codes to study large datasets for specific information. Here is a bit about what these codes do and why they are important:
+
+Mapper Code
+
+The code shows how the mapper class works in the MapReduce system. This code is important for setting up the input and output keys. In this case, the program uses Java code to split and count words.
+
+Reducer Code
+
+This code explains how the reducer class is used in the MapReduce system. It helps with processing key-value pairs and getting a final answer. The Hadoop system works by dividing and conquering data. By using both mapper and reducer, programmers can study weather updates and predict future changes. This coded method is vital for companies to analyze and gather big data effectively.
+
+Hadoop's Tools and How They Help
+
+Hadoop has two main tools, HDFS and YARN, that boost the system's performance. HDFS focuses on storing big data and making it easy to access. This helps Hadoop manage the data for studying and understanding. YARN is another tool used for processing big data. It uses different codes to manage and analyze data for getting important insights. If there's confusion, it can lead to mistakes in planning and actions. So, programmers need to know how to connect YARN and HDFS well to work efficiently. By linking storage and processing tools, we can get better insights. It's important to be professional in coding to make these tools work best.
+
+Companies Using Hadoop Technology
+
+- Marks and Spencer
+- Royal Mail
+- British Airways
+- Royal Bank of Scotland
+- Expedia
+- Amazon Web Services
+- ScienceSoft
+- Pivotal
+- IBM
+- Microsoft
+- Hortonworks
+- MapR
+- Datameer
+- Adello
+- Hadapt
+- Kamasphere
+- NG Data

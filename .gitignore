@@ -167,7 +167,7 @@ bard.config
 *.wp_target
 
 gptzero.ipynb
-symbolic_data
+symbolic_data*
 symbolic_data_four
 
 input.txt
@@ -186,7 +186,7 @@ roberta/models_old
 roberta/models_bak
 roberta/models*
 symbolic_data*
-# t_data*
+t_data*
 
 eve.csv
 gpt_zero.ipynb

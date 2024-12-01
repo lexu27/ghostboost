@@ -1,0 +1,19 @@
+Introduction
+The people who make pictures on computers worry about the picture quality and colors when they change a colorful photo into a computer picture. Computers change pictures to be digital and in color. The video signal from a camera gets changed to digital by a computer part. The data becomes numbers through picture quality and color changes. The quality of a digital picture is affected by how many times it's looked at, and the colors in a picture are decided by numbers. When a picture is worked on, the size becomes numbers (Torii, 2018).
+
+Quantization Levels
+The numbers for colors in a picture need to be good enough for people to see small differences in shades. If the colors in a picture are not right, the lines are not clear. The writers talk about ways to change colors in pictures that can be changed. They want to make beautiful colors with a little storage space. They found that pictures with many colors can be changed to fewer colors without looking bad. The new pictures are usually better than the old ones (Torii, 2018).
+
+The Task of Color Picture Quantization is divided into Four Stages:
+1. Find out what colors are in the original picture.
+2. Use the colors to make a color map.
+3. Match the original colors to the new map.
+4. Change and make the original picture.
+
+Sampling and Quantification
+If a camera doesn't already make digital pictures, a sensor (like a camera) takes the picture and changes it to numbers. The picture is first saved as a line on a computer, then it turns into numbers. The digital picture shows where things are and what they look like. The old picture is smooth, but the new one is not. Looking at things closely gives color, and numbers give shades (Torii, 2018).
+
+In sampling, lines go up and down, and the colors get saved. The picture gets changed into numbers by looking at it in parts. There are two ways to do this, one where everything is the same, and one where some things are different. To make good pictures, more parts need more numbers (Torii, 2018).
+
+Conclusion
+There are three types of pictures: black and white, gray, and colors. Brightness, how light or dark, and color are all important in pictures. The final pictures are made.

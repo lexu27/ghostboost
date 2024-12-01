@@ -1,0 +1,11 @@
+The IDS is a system that helps people find security problems quickly. There are two main types: HIDS and NIDS. They look at data and help keep it safe. The good thing about IDSs is that they tell you fast if there is a problem. This helps people protect their information quickly.
+
+NIDS looks at network traffic to find bad things. But if some parts are not watched, more sensors are needed, which is a problem with NIDS. This is because the switch only sends data to the right place, not everywhere. This makes it hard for NIDS to work well.
+
+HIDS checks how devices work. It keeps track of files and tells you if something changes. It also looks at data coming in and out of the device. HIDS is better than NIDS for many people because it's easier to use and cheaper.
+
+HIDS and NIDS are both good, but HIDS seems to work better. HIDS is good because even if you're not connected to the network, it still protects your files. It's easy to use and doesn't need much training.
+
+It's best to use both HIDS and NIDS together to protect your devices and data. Using them together makes sure you're safe from attacks. Logs are helpful to see what's happening on your network. You can change how much detail is in the logs to not get too much information.
+
+To keep your data safe, it's important to have anti-virus programs and IDSs. Many networks with these programs still have problems. Most companies don't spend money on IDS or train their employees, which is not good. HIDS and NIDS can help, but you need to use them carefully.

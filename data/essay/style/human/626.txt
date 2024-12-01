@@ -1,0 +1,25 @@
+Shown here is a picture of the electron moving line in an animal cell. NADH gives electrons to Flavin mononucleotide (FMN), and FADH 2 gives electrons to an iron-sulfur group (FeS), which then gives them to ubiquinone (Q).
+
+Why does the electron move from one place to another in the line make a proton hill on the inside of the mitochondrial wall?
+
+Electron moving on the chain makes changes in the charges in the wall of the mitochondria, making some areas have extra or not enough electric power. Protons try to fix the not enough electric power by going to places with less power or moving away from places with more power.
+
+There are bad things that can stop or slow down either FMN or the Fe-S in group II that takes electrons from FADH 2 . Which bad thing (for FMN, or for the Fe-S in group II) will make the proton hill worse, and why?
+
+FMNH2 bad thing is expected to make the proton hill worse because it messes up one of the main paths for the electrons to move in the wall. Also, FMNH2 helps release protons that move through ATP maker, so stopping FMNH2 will mean losing this proton moving more.
+
+Will the bad things mentioned before make the use of oxygen go up, down, or stay the same? Explain.
+
+Using oxygen happens in the last steps, mostly in group IV. If any of the steps before that are stopped by bad things, the electrons won't move well, making group IV not work well. This will show as a chain reaction where the problem started way before oxygen use.
+
+Which electrons have more power—the ones taken by Q, or the ones taken by cytochrome c (Cyt c), and how do you know?
+
+Q gets electrons (two bits) from the first group and two electrons from the second group, making it four in total. Cyt c only gets two electrons from the third group. So, we can think that Q has more power than Cyt c.
+
+Where do the electrons go during cell breathing when they move in the cell?
+
+Q gets electrons from FMNH2 and FAD(II) and gives them to QH2, which then move to group (III), while Cyt C gets electrons from group III and gives them to group IV.
+
+What happens to making ATP if the acid level inside the mitochondria goes down? Explain.
+
+If the acid level inside the mitochondria goes down, there will be fewer free protons inside. So, the mitochondria will push a lot of protons into the space between walls, making ATP.

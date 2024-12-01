@@ -1,0 +1,51 @@
+Introduction and Building of the Research Project
+
+Several kinds of shots have been made in the United States and Europe to help with the coronavirus sickness (COVID-19) issue. Some of them are Pfizer-BioNTech, Moderna, AstraZeneca/Oxford, and Johnson & Johnson. These shots are made from hard processes that should take many years. However, the COVID-19 shot was made in less than two years. So, it's important to know about the technology and chemicals that made this happen.
+
+A New Problem
+
+Few illnesses can make big changes in life. COVID-19 is a big threat to health systems all around the world. It's caused by a virus named SARS-CoV-2. This disease is new and dangerous because the virus changed a lot. The new types of the virus made it hard for health systems to fight it. So, the virus was a big challenge to everyone, showing how bad health systems are against new threats.
+
+Not only the medical industry was hurt. The pressure on health systems affected everything. Hospitals were full and unable to help everyone. Governments had to make rules to stop people from meeting, close public places, and stop big events. This hurt small businesses, forced many shops to close, and stopped goods from being moved. Because of this new threat, everything was hard, making it a tough time for everyone.
+
+About the Coronavirus
+
+Coronaviruses are well-known viruses with RNA as their genes. The name comes from their looks, like the sun's corona. The virus has spike-like parts that help it stick to cells. SARS-CoV-2 looks like this too and seems to be a natural virus. But some studies say it might have been made in a lab. The virus keeps changing, making it hard to fight.
+
+Looks of the Virus
+
+The virus has been studied a lot. It's round or oval, about 180 nanometers big. The virus has spike-like parts that help it stick to cells and start an infection. Each spike has three proteins that help the virus bind to cells and inject its genes. The virus also has proteins that wrap its genes, but we don't know much about this yet.
+
+Genes of the Virus
+
+SARS-CoV-2 is a coronavirus with RNA. It's about 29.8 base pairs big. The virus has six parts that help it make proteins. This virus is like other SARS viruses but has changed and can now infect humans easily.
+
+Reasons for the Study
+
+People are working hard to fight COVID-19. They want to make vaccines that will help everyone get immune to the virus. To do this, they need to know how the vaccines work and what makes them safe. This study looks at popular vaccines like Pfizer-BioNTech, Moderna, AstraZeneca/Oxford, and Johnson & Johnson.
+
+Gaps in the Research
+
+People talk a lot about COVID-19 vaccines, but not much about how they work. This study wants to understand how the vaccines are made and how they help the body fight the virus. It links the biochemistry of the vaccines to how they help the body fight COVID-19.
+
+Problem to Solve
+
+The virus that causes COVID-19 is a big problem. To fight it, labs all over the world are making vaccines. These vaccines work in different ways to protect the body. The vaccines like Pfizer-BioNTech, Moderna, AstraZeneca/Oxford, and Johnson & Johnson are different but all aim to protect people from COVID-19.
+
+Aim of the Study
+
+This study wants to understand how the vaccines for COVID-19 work. It looks at the biochemical and technological parts of vaccines like Pfizer-BioNTech, Moderna, AstraZeneca/Oxford, and Johnson & Johnson. The study wants to review how effective these vaccines are in fighting COVID-19.
+
+Objectives of the Study
+
+1. Find out how the two types of COVID-19 vaccines work.
+2. Check how DNA and RNA proteins help in making the Coronavirus vaccine.
+3. Study the structure, genes, and how the virus infects the body.
+4. Talk about the science behind the different vaccine technologies.
+5. Look at how mRNA vaccines help in making the Coronavirus vaccines and fighting COVID-19.
+6. See which of the four vaccines work best against the virus types in the USA and Europe.
+7. Check how the Coronavirus vaccine is safe for people.
+
+Scope and Limits
+
+This study is part of a master's program. It uses a literature search to find answers to its goals. But there are some limits. The vaccines are still being tested, so we don't have all the data yet. Also, the study only looked at English sources, so some important data might be missing. Lastly, the study only looked at four vaccines, so the results might not apply to all vaccines.

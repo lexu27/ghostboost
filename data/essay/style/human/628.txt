@@ -1,0 +1,72 @@
+Construct Development and Scale Creation
+
+Definition of Depression
+Definition of sadness: a feeling of being very unhappy for more than two weeks, making it hard to do daily tasks and feeling like there is no hope, sometimes thinking about hurting oneself. Some researchers say that when a person feels sad for more than two weeks and has low spirits, it might be depression. Others say depression is when someone is very sad, loses interest in things, feels tired, can't focus, feels hopeless, and thinks about hurting themselves. Depression can also make it hard to concentrate, make decisions, and feel good about oneself. It can also make people feel scared, angry, and worried.
+
+Items to Understand Sadness
+1. Feeling sad, worthless, and hopeless;
+2. Losing interest and joy;
+3. Thinking about hurting oneself;
+4. Having trouble doing daily tasks and making decisions;
+5. Feeling scared, angry, and worried.
+
+Way of Measuring
+To measure how sad a person feels, we can ask them how often they feel this way, from never to constantly. We give a number from 0 to 4 for each answer, where 0 is never and 4 is constantly. This way helps the person see how often they feel sad and understand their feelings better. For the therapist, this way helps to see the overall picture of the person's feelings and get an idea of how bad things are. It also helps to see if the person has depression and how bad it might be.
+
+Questions for People
+1. How often do you feel sad, worthless, and hopeless?
+  * Never;
+  * Sometimes;
+  * Often;
+  * Very often;
+  * Constantly.
+2. How often do you lose interest and joy in things?
+  * Never;
+  * Sometimes;
+  * Often;
+  * Very often;
+  * Constantly.
+3. How often do you think about hurting yourself?
+  * Never;
+  * Sometimes;
+  * Often;
+  * Very often;
+  * Constantly.
+4. How often do you have trouble doing daily tasks and making decisions?
+  * Never;
+  * Sometimes;
+  * Often;
+  * Very often;
+  * Constantly.
+5. How often do you feel scared, angry, and worried?
+  * Never;
+  * Sometimes;
+  * Often;
+  * Very often;
+  * Constantly.
+
+Testing or Self-Reporting
+This way of understanding sadness is better for people to report how they feel, but it might not show everything. Sometimes people who say they felt sad in the past might also say it when talking to a therapist. So, this way is good to see if someone might be sad, but it's not enough for a detailed talk.
+
+Analysis and Reasoning
+Standard and Trust Scores
+To know how much things like age, gender, and education affect the test results, we need to check the standard scores. Researchers say that using a special math way can help understand what affects the scores and how they are connected. This helps to see the scores better and get more from the results.
+
+Trust shows how well the test results are true. One way to see if a test is trustful is to look at how well the questions are connected to each other and if the test gives the same results when done again. There are math ways to check this, like Cronbach's alpha, which should be at least 0.70 to show the test is good. A higher number is even better and shows the test is very trustful. For this test, a special math model called ANOVA Model can help see how the results change over time and if the test is still trustful.
+
+Number of People
+The number of people needed for the test depends on what we want to find out. For this test, we need at least 8-10 people to see if it works well.
+
+People's Features
+The people who do the test can be very different because sadness can happen to anyone. The group of people doing the test depends on what we want to know. For example, the test can be done with students, women with certain health problems, older people, or many people from a country. With many different people doing the test, we can see better how the results show the sadness level. 
+
+Making General Conclusions
+General conclusions help us see what many people feel and show if the test can help others. The results can be used for people who might feel sad and think they have depression. 
+
+Truthfulness
+To know if the test really shows what it should, we need to check how well the questions match the topic. People who do the test can also say if they think the questions are good. Professionals can also check if the questions are right for finding out about sadness. The test results can also be checked by comparing them with what other tests show.
+
+Choosing Questions
+The questions in the test were picked using logical ways. Experts who know about sadness helped choose the questions. The questions were checked by professionals to see if they are good for finding out about sadness. The test was also checked to see if it gives results that match what therapists see when talking to people.
+
+Cut-Off Scores

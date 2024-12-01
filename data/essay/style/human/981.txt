@@ -1,0 +1,5 @@
+Mercator is a common map type, but it doesn't show country sizes correctly. Many people say the sizes on this map are unfair. Greenland and Africa are good examples. According to Mercator, they look the same size. But Europe and North America seem bigger than they are. Greenland looks much smaller than it is. Africa looks bigger on a newer map. Wrong sizes on maps can be confusing. They might make white countries seem more important. 
+
+I learned that Mercator doesn't show country sizes accurately. I found a new map, like Google Maps, that shows Earth as a globe. This way, countries are shown more correctly. People use Mercator for navigation, but Google Maps is better for seeing real sizes. It keeps the angles right.
+
+In a world that's more connected, knowing about geography is important. People can learn more about countries and Earth's true shape. I realized Mercator isn't perfect. Countries may look different on a map compared to real life.

@@ -1,0 +1,17 @@
+My study is Networking and I picked two papers about modern technology. One paper is by Benzaid and Taleb (2020) in IEEE Network, it talks about how artificial intelligence affects 5G networks. The other paper is by Zhang et al. (2021) about BIM software tools in the Computer Applications in Engineering Education journal. The first paper is for data security agents, it talks about how artificial intelligence in 5G can be attacked. The second paper is for engineering educators, it discusses teaching methods in engineering. This research looks at papers by Benzaid and Taleb (2020) and Zhang et al. (2021).
+
+First, we need to understand what each paper is about. Both papers use numbers and words to make their points. Benzaid and Taleb (2020) say we need strong security for 5G to work well. They say regular security is not enough because there are many problems like cyber attacks and different technologies in wireless networks. They think using AI can help with security. They say AI can find patterns in data fast and make good decisions.
+
+The second paper by Zhang et al. (2021) talks about a project for engineering students. They use a mix of numbers and words to see if the project helps students learn about BIM. They find that the project helps students get better at BIM. They also look at how well students work together in the project.
+
+Both papers have lots of facts and evidence to support what they say. Benzaid and Taleb (2020) show diagrams to explain AI and 5G. Zhang et al. (2021) use tables to show their data. Both papers use numbers and facts more than feelings to explain things.
+
+Benzaid and Taleb (2020) say AI is important for security in 5G networks. They also talk about problems that may come with using AI. They say we need to find ways to stop these problems. Zhang et al. (2021) want to show that their project is good for teaching engineering. They say BIM skills are important for students who want to work in the industry.
+
+Both papers try to teach and convince their readers about their ideas. They both organize their papers in similar ways, but Benzaid and Taleb (2020) have more topics about 5G network management and risks. Their paragraphs are long and have a lot of data and analysis. They also cite other papers using Harvard style.
+
+The methods in both papers are different because they are about different things. Zhang et al. (2020) split their study into five parts. They talk about BIM education, the project for students, teamwork, and how to improve the project. They use interviews and scores to collect data.
+
+Benzaid and Taleb (2020) talk about how attackers can use AI to harm 5G networks. They also talk about how to stop these attacks using AI. They show ways to make the model strong against bad cases. They say using many models together can make the model stronger.
+
+In conclusion, both papers use facts to explain their ideas. They want to teach and convince their readers about their work. They use data and evidence to support their claims and make their points clear.

@@ -1,0 +1,50 @@
+Introduction
+Broken disk often happens in computers and creates big problems. There are many reasons for this like human mistakes, computer machine breaking, bad software harm, media damage, and too much heat or water exposure. It is smart to change the HDD before it breaks completely to keep the other computer parts safe (Fernández-Fuentes et al., 2022). While people who know about tech can switch the HDD easily, those who don't know much about computers find it hard. These people include those using a computer for the first time and those who don't use computer parts often. New computer users can use this guide to change the HDD correctly without ruining the computer parts.
+
+These steps will help readers swap the broken HDD from a computer step by step and turn on the computer to test the new HDD. Even though these steps make changing the HDD look simple, the computer user should have some basic computer knowledge. If it's the first time using computer parts, it's good to ask for help. The right helpers are computer experts and official computer part sellers where you bought the HDD.
+
+Main Steps
+You can upgrade the HDD in a working computer or a broken laptop. Before you start, make sure you save your important data on another device like a USB or Google Drive. Turn off the computer by following the right steps. After that, unplug the power to avoid any electric shock. Follow the instructions in the HDD guideline book. Don't put the new HDD near heat or magnets that mess with the storage system. Before you put in the new HDD, take out the old one carefully. Turn on the computer after you replace the HDD. This whole process takes about fifteen to twenty minutes and should be done in a room with good air and normal temperature.
+
+List of Things You Need
+Before you start changing the HDD, you need some tools and materials. These tools help avoid electricity, dirt, shocks, and other dangers to the computer and you. So, before you start, get these protective tools. Here are the tools you need to change the HDD in a computer:
+  * A mat to stop static electricity from hurting you and the computer
+  * A vacuum to clean the computer
+  * A wristband to stop static electricity buildup on your wrists
+  * 
+  * A screwdriver to tighten and remove screws
+
+Also, make sure you have these materials before you start:
+  * A can of air
+  * 
+  * A cleaner
+  * A new hard disk drive
+
+List of Steps
+Follow these steps when changing the HDD, and remember to unplug the power and read the HDD maker's instructions carefully.
+Save your data from the old HDD
+If the old HDD still works, save your data on another device like a USB or online on OneDrive or Google Drive.
+Get a full Operating System copy you can use
+Do this step if you're changing the main HDD and not using a cloning tool. You can buy the software on a DVD or download it on a USB.
+Choose between an HDD or an SDD
+SDDs are faster and stronger than HDDs but cost more. Both work the same, so pick one based on your budget.
+Find the right drive for your computer
+Different computers need different HDDs in different sizes. If you're changing a laptop's HDD, you need a 2.5-inch HDD, and for a desktop, you need a 3.5-inch HDD.
+Turn off your computer the right way
+Following the right steps when turning off your computer keeps your data safe and stops harm to the computer parts. Unplug the computer after turning it off.
+Ground yourself before opening the computer
+Use the wristband and stand on the mat to stop hurting the electronic parts with static electricity. These tools help keep the computer safe from damage.
+Open the computer case
+This step changes based on the computer type: desktop or laptop. For a desktop, unscrew the screws with the screwdriver. Laptops either have easy access doors for the HDD or need unscrewing and removing parts and the battery.
+Find the HDD in the computer
+HDDs are usually screwed inside the computer. Once you find it, unplug the power and data cables from the HDD.
+Make sure you removed all screws and unplugged the HDD
+Use the screwdriver to get rid of all screws holding the HDD in the computer. If the computer's case doesn't support the HDD, use your hand to hold it. Then, slide it out carefully.
+Set jumpers on an IDE drive if you're not using a SATA drive
+HDDs have diagrams showing where to set the jumpers. Jumper settings set the drive as Master, Slave, or Select based on your pick and the old drive settings.
+Put the new HDD in the right spot
+Put the new HDD where the old one was. Then, carefully screw it in, plug in the power and data cables, and close the computer case.
+Start the computer with the recovery media in
+You can skip this step if you're using cloning software, but if you have recovery media on a DVD, eject the tray first. If you're using a USB, plug it in before turning on the computer. The computer will start up into the Operating System installer from the USB or DVD.
+Follow the on-screen steps to install the OS again
+After you reinstall the OS, the computer will register it again. With a working computer, you can get back your saved data. The computer is ready to use and can be checked for errors with a diagnostic test. Keep the old HDD safe in case you need it later.

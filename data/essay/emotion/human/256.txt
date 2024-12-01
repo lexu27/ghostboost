@@ -1,0 +1,49 @@
+The document on Farcargo’s information system implementation plan is written in a neutral tone. 
+
+Rewritten Text: Summary
+This paper outlines Farcargo’s information system implementation plan. It consists of different sections covering the system overview, primary tasks during implementation, and the necessary resources. The document has been continuously developed since the system design phase, with updates during development and finalization in the testing phase. It will serve as a guiding tool throughout Farcargo’s information system implementation.
+
+Purpose
+The main aim of this document is to provide a roadmap for the project team during Farcargo’s system implementation. It details the major tasks and how to execute them effectively. An implementation plan establishes timelines for task completion and serves as a communication and training guide.
+
+System Overview
+As an online-based organization, Farcargo necessitates a system that functions as its virtual workspace. The company, a globally operating logistics firm, envisions an information system with features like a virtual assistant, billing department, data management, operations monitoring, and senior management. Farcargo aims to create a system where users can engage with them as they would in a physical office.
+
+System Description
+The Farcargo information system comprises the user interface, application, and database. The user interface allows clients to register accounts, access their data, and interact with the company's services. Upon booking a logistic service, the system automatically generates bills, facilitates payment, and schedules deliveries. The system enables real-time monitoring of goods in transit, communication between staff, management, and clients, and post-delivery confirmation and feedback.
+
+System Organization
+The Farcargo system structure includes hardware, software, and databases. Users require hardware components like computers, mobile devices, and peripheral devices to access the system effectively.
+
+Company’s Information Systems Infrastructure
+An Information System Block Diagram.
+Business logic diagram.
+Physical Layout Diagram.
+Key Network Infrastructure Elements.
+
+Description of Implementation
+The Farcargo information system entails the development of a website, desktop application, and android application, which will integrate to support user needs efficiently. These applications will enhance user interactions and accessibility across multiple devices. The system deployment will take place at Farcargo's new office facility, with the server managed by the information management staff. The agile approach will be used for system implementation to allow for flexibility, innovation, and continuous improvements.
+
+Points of Contract
+Eagle Sight Information System Developers (ESISD) will be responsible for the development, implementation, installation, and maintenance of the Farcargo information system. Various managers, including the Project Manager, Program Manager, Security Manager, Database Administrator, Configuration Manager, Website Development Manager, and Site Installation Representative, will oversee different tasks to ensure successful system development.
+
+Major Tasks
+Various tasks will be carried out by designated personnel to ensure the successful development and implementation of the Farcargo information system. These tasks include planning, hardware and software identification, program coding, project implementation, documentation, training, maintenance, and feedback response.
+
+Implementation Schedule
+The implementation timeline outlines the start and end dates for each task, highlighting the time required for completion.
+
+Security
+Given that most of Farcargo's operations will be conducted online, security measures are crucial to safeguard the system and data. Features like encryption, authentication, SSL secure communication, and authorization will be implemented to enhance system security.
+
+Implementation Support
+Support elements such as software, hardware, facilities, materials, equipment, and personnel will be essential during the Farcargo information system implementation.
+
+Hardware, Software, Facilities, and Materials
+The system development and implementation process will require software tools, hardware tools, physical facilities, and materials to support the project.
+
+Personnel
+Qualified IT experts will be required to handle various aspects of the project to ensure its success. A project manager, program manager, security manager, database administrator, configuration manager, website development manager, and site installation representative, along with their respective team members, will oversee different aspects of the project.
+
+Performance Monitoring
+Monitoring the project's progress is crucial to ensure its success. The project team will use project management software, key performance indicators (KPIs), and real-time monitoring tools to track progress, address challenges, and evaluate performance on a weekly basis.

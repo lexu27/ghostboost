@@ -1,0 +1,7 @@
+The article talks about different ways to pick good suppliers for a company. It says that this is really important for a manufacturing company to do well. Before, companies just cared about being efficient, but now they see how important it is to work closely with suppliers. The article believes that picking the right suppliers is key for a company to grow and do better. 
+
+It starts by talking about different methods to choose suppliers. Some common ways are using math models, SMART, ANP, AHP, DEA, and linear programming. For example, DEA looks at a supplier system and says if it's good or bad based on some specific things. Math models help compare suppliers to find the best one in terms of cost and other things. 
+
+The article then looks at how often these methods are mentioned in other writings. DEA is talked about the most at 30%, while math models, AHP, and case-based reasoning are talked about less. But these are the main ways people choose suppliers. 
+
+The article also says it's important to know which methods are popular to pick suppliers wisely. It mentions that suppliers should be checked at different levels like strategic, functional, and operational. It suggests using DEA, math models, or AHP to find the best suppliers, with AHP being good for keeping things consistent.

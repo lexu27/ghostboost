@@ -1,0 +1,20 @@
+This paper is about judgmental forecasting. It has general information about this type of forecasting, examples of when it's used, and its good and bad points. One way to do judgmental forecasting is the Delphi method, where experts answer questions without knowing what others said. Books by Hyndman and Athanasopoulos and an article by Sniezek are used to help explain this data.
+
+What is Judgmental Forecasting
+When a problem is very hard, new, lacks enough information, or can't be solved with math, you ask smart people for help. They give their opinions, make guesses, and use special ways to make choices. Hyndman and Athanasopoulos (2018) say this method is about getting important info from experts to make smart decisions. Expert opinions are important because they are based on what they know.
+
+Judgmental forecasting helps gather, summarize, and analyze expert ideas to make good choices. It is always getting better and can work well with math and stats to lower risks of wrong choices.
+
+Where is Judgmental Forecasting used Most Effectively?
+Experts say judgmental forecasting is good in some situations. First, when things can't be explained with math. Second, when there's no good data to use objective methods. Third, when there's no way to use math. And fourth, in emergencies when quick decisions are needed. These are the main times judgmental forecasting is used.
+
+Examples of how Judgmental Forecasting is Used Most Effectively
+A good example is central banks using judgmental forecasting to guess economic activity since they only get GDP data every few months. This kind of forecasting is helpful in research and development areas where experts can provide unique info. For example, asking people what they want in a product can help companies decide what features to focus on.
+
+Advantages and Disadvantages of Judgmental Forecasting
+Just like anything else, judgmental forecasting has good and bad sides.
+
+Advantages
+One good thing is that judgmental forecasting can be used for many types of forecasts. It's easy to understand and doesn't need perfect info to work well. Sniezek (1990) says statistical methods are only good for short-term forecasts. But judgmental forecasting can help with long-term forecasts.
+
+Disadvantages

@@ -1,0 +1,5 @@
+Confidence limits and hypothesis testing are very important in statistics for healthcare. They help us understand how sure we can be about our guesses. For example, if a man is six, and we think he could be between 4 and 7, that's our confidence interval. It shows how close we are to being right. To find this out, we need to do some calculations.
+
+Hypothesis testing is about checking if something is true. We use data from a group and compare it to what we think. There are two types of guesses: one says there's no difference, and the other says there is. Sometimes we make mistakes in our guesses, like saying something is wrong when it's not, or saying it's right when it's not.
+
+Using these methods helps healthcare workers make better decisions. Doctors are like helpers from God, but they need the right information to help patients. They should also look at numbers to get a better idea of the sickness. Both these methods are connected and help us learn more about a group or check if what we think is true.

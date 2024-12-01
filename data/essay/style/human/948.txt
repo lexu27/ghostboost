@@ -1,0 +1,27 @@
+Due to business getting more complex, organizations need tools to understand how things work now and act before things happen. This work talks about tools used in this process: ways to analyze new solutions, looking at risks and how they happen, and ways to decide where to invest money. The United Arab Emirates has been good at making business decisions. This paper talks about times when good decisions made things work much better in organizations. The study will find important things and decision ways while looking closely at each one to see if they work, especially in the UAE.
+
+Data Things Evaluation
+A good and safe way to manage data is key for a business to run well. If data security is not good, it can cause problems for operations. Losing data can make things hard for employees to do their job. There are a few ways data gets lost: it can be deleted by accident or the data storage can be damaged. Either way, it can make the data not usable for what it's meant for.
+
+Reasons
+People Things: Human Mistakes
+Mistakes by people can cause data problems, whether it's workers, bosses, or anyone else. Mistakes can be done on purpose or by accident. To manage mistakes, people can be trained better. Also, access to machines can be controlled to stop people from doing bad things with data.
+
+People Things: Computer Stealing
+Stealing computers with important data is another way data can get lost. Recently, more people are using personal laptops instead of big computers, making it easier to steal data. Losing a laptop can lead to losing data. Losing personal items like computers or hard drives often leads to data safety issues.
+
+Computer Problems: Bad Software
+Viruses are programs that mess with how computers work, leading to data loss. Viruses can come from downloads or email links. Backing up data and having antivirus software can help prevent data loss. Installing antivirus software is the best way to keep data safe.
+
+Things Getting Broken
+Hardware is important for computers to work and stores a lot of data. If hardware gets damaged, data can be lost. For example, hard drives can break easily. To stop data loss from broken hardware, it's good to have extra storage and backup data. Companies can also train people to handle hardware better.
+
+Environmental Issues: No Power
+Power is important for businesses. If there's no power, servers and computers can shut down, causing data loss. Backup generators can help during power outages. Natural disasters like floods or earthquakes can also cause data loss. Modern tech like cloud backup can be a solution.
+
+Money Decisions
+Biggest Good
+In the biggest good way, the decision-maker picks the action that gives the best outcome in the market. By choosing the best option, the manager can make the most profit. For example, investing in commodities can bring in $32,760. Based on this positive approach, investing in commodities seems like the best choice.
+
+Least Regrets
+The least regrets approach aims to make an investment decision with the fewest losses. Mutual funds seem to be the best choice with a value of $6,110. Investing in mutual funds can lead to fewer losses compared to other options like commodities or cryptocurrency.

@@ -172,7 +172,7 @@ def select_features(exp_to_data, labels, verbose=True, to_normalize=True, indice
     while val_exp:
         best_score, best_exp = -1, ""
 
-        for exp in tqdm.tqdm(val_exp) if verbose else val_exp:
+        for exp in tqdm.tqdm(val_exp, position=0, leave=True) if verbose else val_exp:
             score = k_fold_score(
                 get_data(*best_features, exp), labels, k=5, indices=indices
             )

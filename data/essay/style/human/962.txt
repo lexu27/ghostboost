@@ -1,0 +1,5 @@
+Digital detective tools are liked by detectives, because they help do technical checks easily. Autopsy is a famous tool for this job. It looks at pictures on a computer's hard drive. Autopsy can work with computers and phones. It can do many things like looking at pictures, finding special things, or getting data. Even if Autopsy is free, it is good for checking problems and it is always changed to keep up with new tech.
+
+Some detective tools are made for one system. Arsenal Recon looks at Windows and its settings to find info about a device. Windows has lots of info about apps and data, so Arsenal Recon is useful for checks. But this tool costs money - $65 a month or $756 a year.
+
+For phones, a special tool like Cellebrite UFED is needed. It gets data from different phones, mainly new smartphones with different systems. Cellebrite UFED can unlock the phone's security, and look at info on it or on cards. This tool is costly, starting at $2499.

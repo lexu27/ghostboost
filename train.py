@@ -27,46 +27,6 @@ trigram_model = pickle.load(
 # pdb.set_trace()
 tokenizer = tiktoken.encoding_for_model("babbage-002").encode
 
-wp_dataset = [
-    Dataset("normal", "data/wp/human"),
-    Dataset("normal", "data/wp/gpt"),
-]
-
-reuter_dataset = [
-    Dataset("author", "data/reuter/human"),
-    Dataset("author", "data/reuter/gpt"),
-]
-
-essay_dataset = [
-    Dataset("normal", "data/essay/human"),
-    Dataset("normal", "data/essay/gpt"),
-]
-essay_synonym_dataset = [
-    Dataset("normal", "data/essay/synonym/human"),
-    Dataset("normal", "data/essay/synonym/gpt"),
-]
-essay_back_trans_dataset = [
-    Dataset("normal", "data/essay/back-trans/human"),
-    Dataset("normal", "data/essay/back-trans/gpt"),
-]
-eval_dataset = [
-    # Dataset("normal", "data/wp/claude"),
-    # Dataset("author", "data/reuter/claude"),
-    Dataset("normal", "data/essay/claude"),
-    # Dataset("normal", "data/wp/gpt_prompt1"),
-    # Dataset("author", "data/reuter/gpt_prompt1"),
-    Dataset("normal", "data/essay/gpt_prompt1"),
-    # Dataset("normal", "data/wp/gpt_prompt2"),
-    # Dataset("author", "data/reuter/gpt_prompt2"),
-    Dataset("normal", "data/essay/gpt_prompt2"),
-    # Dataset("normal", "data/wp/gpt_writing"),
-    # Dataset("author", "data/reuter/gpt_writing"),
-    Dataset("normal", "data/essay/gpt_writing"),
-    # Dataset("normal", "data/wp/gpt_semantic"),
-    # Dataset("author", "data/reuter/gpt_semantic"),
-    Dataset("normal", "data/essay/gpt_semantic"),
-]
-
 
 def get_featurized_data(generate_dataset_fn, best_features):
     t_data = generate_dataset_fn(t_featurize)
@@ -93,6 +53,10 @@ if __name__ == "__main__":
     parser.add_argument("--generate_symbolic_data_back", action="store_true")
     parser.add_argument("--generate_symbolic_data_synonym",
                         action="store_true")
+    parser.add_argument("--generate_symbolic_data_emotion",
+                        action="store_true")
+    parser.add_argument("--generate_symbolic_data_style",
+                        action="store_true")
     parser.add_argument("--generate_symbolic_data_four", action="store_true")
     parser.add_argument("--generate_symbolic_data_eval", action="store_true")
 
@@ -118,6 +82,49 @@ if __name__ == "__main__":
 
     result_table = [["F1", "Accuracy", "AUC"]]
 
+    wp_dataset = [
+        Dataset("normal", "data/wp/human"),
+        Dataset("normal", "data/wp/gpt"),
+    ]
+
+    reuter_dataset = [
+        Dataset("author", "data/reuter/human"),
+        Dataset("author", "data/reuter/gpt"),
+    ]
+
+    essay_dataset = [
+        Dataset("normal", "data/essay/human"),
+        Dataset("normal", "data/essay/gpt"),
+    ]
+
+    essay_synonym_dataset = [
+        Dataset("normal", "data/essay/synonym/human"),
+        Dataset("normal", "data/essay/synonym/gpt"),
+    ]
+
+    essay_back_trans_dataset = [
+        Dataset("normal", "data/essay/back-trans/human"),
+        Dataset("normal", "data/essay/back-trans/gpt"),
+    ]
+
+    essay_emotion_dataset = [
+        Dataset("normal", "data/essay/emotion/human"),
+        Dataset("normal", "data/essay/emotion/gpt"),
+    ]
+
+    essay_style_dataset = [
+        Dataset("normal", "data/essay/style/human"),
+        Dataset("normal", "data/essay/style/gpt"),
+    ]
+
+    eval_dataset = [
+        Dataset("normal", "data/essay/claude"),
+        Dataset("normal", "data/essay/gpt_prompt1"),
+        Dataset("normal", "data/essay/gpt_prompt2"),
+        Dataset("normal", "data/essay/gpt_writing"),
+        Dataset("normal", "data/essay/gpt_semantic"),
+    ]
+
     datasets = [
         # *wp_dataset,
         # *reuter_dataset,
@@ -126,6 +133,8 @@ if __name__ == "__main__":
     generate_dataset_fn = get_generate_dataset(*essay_dataset)
     generate_dataset_fn_synonym = get_generate_dataset(*essay_synonym_dataset)
     generate_dataset_fn_back = get_generate_dataset(*essay_back_trans_dataset)
+    generate_dataset_fn_emotion = get_generate_dataset(*essay_emotion_dataset)
+    generate_dataset_fn_style = get_generate_dataset(*essay_style_dataset)
 
     if args.generate_symbolic_data:
         generate_symbolic_data(
@@ -146,7 +155,7 @@ if __name__ == "__main__":
             verbose=True,
         )
 
-        t_data = generate_dataset_fn(t_featurize)
+        t_data = generate_dataset_fn_back(t_featurize)
         pickle.dump(t_data, open("t_data_back", "wb"))
 
     if args.generate_symbolic_data_synonym:
@@ -157,8 +166,30 @@ if __name__ == "__main__":
             verbose=True,
         )
 
-        t_data = generate_dataset_fn(t_featurize)
+        t_data = generate_dataset_fn_synonym(t_featurize)
         pickle.dump(t_data, open("t_data_synonym", "wb"))
+
+    if args.generate_symbolic_data_emotion:
+        generate_symbolic_data(
+            generate_dataset_fn_emotion,
+            max_depth=3,
+            output_file="symbolic_data_gpt_emotion",
+            verbose=True,
+        )
+
+        t_data = generate_dataset_fn_emotion(t_featurize)
+        pickle.dump(t_data, open("t_data_emotion", "wb"))
+
+    if args.generate_symbolic_data_style:
+        generate_symbolic_data(
+            generate_dataset_fn_style,
+            max_depth=3,
+            output_file="symbolic_data_gpt_style",
+            verbose=True,
+        )
+
+        t_data = generate_dataset_fn_style(t_featurize)
+        pickle.dump(t_data, open("t_data_style", "wb"))
 
     if args.generate_symbolic_data_eval:
         generate_dataset_fn_eval = get_generate_dataset(*eval_dataset)

@@ -1,0 +1,9 @@
+The implementation of computer technologies in modern society brings about numerous activities seemingly unrelated to them, like the recruitment process. With the growth of corporate culture and a more competitive job market, a more streamlined solution for candidate selection was needed, leading to the utilization of AI software by Human Resource managers to ease the workload. The article by Pardes delves into how candidates have learned to game the system in their favor.
+
+The article opens with an interview with Shirin Nilizadeh, who discovered patterns in the candidate selection software. Nilizadeh found that using specific words not directly linked to qualifications could boost a candidate's ranking. While Nilizadeh's intentions were academic, many platforms allow candidates to enhance their resumes with various hacks, like inserting keywords in invisible font. Candidates have found ways to increase their chances, from mentioning prestigious universities to copying job descriptions.
+
+The author warns that prioritizing efficiency can lead to technology being overly glorified. Joseph Fuller cautions that excessive AI use in recruitment can lead to discrimination. Without the right keywords or skills formulations, many applicants may never progress. Schweber notes that software filters out up to 75% of applicants based on meeting specific job criteria. Paid resume enhancements and tracking systems further skew the market in favor of financially able applicants.
+
+This article highlights the impersonal nature of technology. While technology can enhance productivity, it can disadvantage those lacking tech skills. Overreliance on technology can be exploited for harmful purposes, eroding objectivity and fostering nepotism.
+
+The text underscores the flaws in technological systems and their misapplication. Exploring the nuances between human and machine perceptions offers insights into potential career pitfalls as an IT professional.

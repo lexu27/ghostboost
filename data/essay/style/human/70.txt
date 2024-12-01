@@ -1,0 +1,50 @@
+Drug Class
+
+Artemisinin drugs.
+
+Explanation
+Artesunate is a drug to fight against malaria. It is given by injection and helps people with malaria. Artesunate works well because it has a special group that likes water (Khanal, 2021). Artesunate is the first choice of treatment followed by more malaria treatment.
+
+How Artesunate Works
+Artesunate changes into dihydroartemisinin (DHA), which fights against the parasite that causes malaria, Plasmodium falciparum. DHA reacts with heme and makes bad things that stop proteins and DNA from being made.
+
+Giving the Drug and Amount
+Artesunate comes as a white powder that needs to be mixed with clear liquid to make a clear solution. Adults and children over 20 kilograms should get 2.4 mg per kg, and children under 20 kilograms should get 3 mg per kg (Kitabi et al., 2021). The drug is given through a vein at 0, 12, 24 hours, and then every day.
+
+How Drugs Can Affect Each Other
+Other drugs like ritonavir, nevirapine, or UDP-Glucuronosyltransferase (UGT) inducers may make Artesunate less effective (FDA, 2020). UGT Inhibitors might make the side effects of Artesunate worse. Doctors need to watch out for these things when using Artesunate with other drugs.
+
+What Could Go Wrong
+The FDA (2020) says that when testing Artesunate, they found these problems:
+  * red pee;
+  * sudden bad kidneys needing cleaning;
+  * yellow skin;
+  * not enough blood;
+  * not enough blood cells;
+  * not enough lymph cells;
+  * not enough white blood cells;
+  * lung infection;
+  * upset tummy;
+  * high creatinine;
+  * water in the lungs;
+  * high fever;
+  * tummy ache;
+  * throwing up;
+  * feeling dizzy;
+  * head pain;
+  * coughing.
+
+Lab Results
+Tests showed that Artesunate works better than quinine, another malaria drug, by lowering the chance of dying and getting low blood sugar (Khanal, 2021). Another study found that Artesunate is safer because patients are less likely to go into a coma or have seizures. Artesunate also helps people get better faster compared to artemether.
+
+Things to Remember
+If someone has a bad reaction to Artesunate like trouble breathing or skin rash, they might need a different drug. After using Artesunate, doctors need to watch for signs of blood problems. Studies show that Artesunate is safe for pregnant women, unlike what happens if malaria is not treated quickly.
+
+Taking Care of Patients
+Doctors first check if the person with malaria needs Artesunate. The drug is made by mixing a powder with a liquid. A nurse should mix 11 ml of liquid with the powder and mix it until all the powder is gone. The drug should be given slowly over 1-2 minutes. Artesunate should be kept at room temperature, away from cold, heat, and light. Doctors should not use the drug after it's old.
+
+Checking Patients
+Only people with malaria should get Artesunate after a doctor confirms it. Doctors check the patients by looking at them, asking questions, and doing tests. A special test might be needed to see if there are parasites in the blood. More tests might be done to check for side effects.
+
+Teaching Patients
+People with malaria who get Artesunate should know how to take it and for how long. They should talk to the doctor about allergies, kidney problems, pregnancy, and other drugs they take. Patients should also know about side effects and when to tell the doctor. If there is a bad reaction, they might need a different drug and stop using Artesunate.

@@ -1,0 +1,56 @@
+Company’s Background Information
+
+Farcargo is a company that helps other businesses move their stuff using the internet. It sends things to people in the country and other countries too. It started in 2006 as a local company in Seattle, but then in 2009, it began sending things everywhere. The company’s services like booking and payment are done online.
+
+The company was started by Adams Johnsons and five other important people:
+1. Someone who handles money – Janet Smith
+2. Someone who does marketing – Peter Calgary
+3. Someone who manages operations – Susan Milles
+4. Someone who manages people – Diana Jones
+5. Someone who handles technology – Steve Wilson
+
+Farcargo is an online business, so it doesn’t need many physical stores. It has its main office in Seattle where it does most of its work. The company has websites and social media to talk to clients. They use these to show what they offer and to talk to people. Clients can go on their website to see where their things are and what they have done in the past. Farcargo really cares about helping customers well.
+
+Farcargo Current Status
+
+In December 2021, Farcargo had 18 full-time workers and 2 part-time workers. The company is worth $258 million as of December 31, 2021. They made $27 million in a year. Farcargo has been growing by 5% every year and plans to grow even more. They want to move to a new two-story building.
+
+The Company’s Mission
+
+Farcargo wants to change how businesses move things by being reliable, cheap, and on time. They want to be a top online delivery company that helps businesses trade with different countries. Farcargo is working to be better than the global standards in the delivery industry.
+
+The Company’s Vision
+
+They want to be a good and flexible partner for businesses. Farcargo wants to be there for businesses and be flexible in how they work, when they deliver, how they get paid, how they move things, and where they go. They want to be able to help all kinds of clients.
+
+Company’s Business Type
+
+Farcargo helps businesses move stuff online. They move things in one country or between countries using roads, air, or water. They have different trucks for different kinds of things. Customers can do everything online from booking to payments.
+
+Farcargo Customers
+
+Farcargo works with different companies who need to move their things. They have clients who use them once and clients who use them again and again. Many of their clients are companies who need to move things for their business. Sometimes, they also help individuals move their stuff like cars. They also do work for the government.
+
+Demographic Information
+
+Farcargo is in Seattle but also has offices in 40 countries. They work on all continents but most of their clients are in the U.S.A, Asia, and Europe. They move things within countries and between countries.
+
+Company’s Information Systems Infrastructure
+
+The company’s system has four parts: what users see, applications, business processes, and a database. They have hardware, software, networking, storage, and data centers to support their system.
+
+User interface
+
+This is what users see when they use the system. Farcargo’s interface has colors and pictures to help users. There are buttons for registration, about us, contact us, services, and inquiries. Users can easily sign up, learn about the company, contact them, and ask questions.
+
+Applications
+
+Users can do different things like booking and tracking their stuff using the applications. They can also pay for services. The booking app helps clients choose the right equipment for their things. Clients can also see where their things are and who to talk to about them. 
+
+Business Processes
+
+The system helps with billing, scheduling, getting receipts, and finalizing deals. It helps the company plan and organize their work. Clients can see what they need to pay, ask for more details, and give feedback on the service.
+
+Database
+
+Important information like customer details, business info, money stuff, and equipment data is kept safe in the database. This information is very important and needs to be secure. Only a few people are allowed to access and manage this info.

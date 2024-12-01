@@ -1,0 +1,63 @@
+This paper shows Farcargo’s plan for their information system. It is split into parts, like an overview of the system, what they did during making it, and what stuff they need (like people, computers, programs, and other things). They worked on this paper since they started planning the system. They updated it while they were making the system, and the final version was done during testing. This paper will help with setting up Farcargo’s information system.
+
+The main point of this paper is to give a plan of what will happen when they make Farcargo’s system. It also talks about the main things to do and how to do them right. A plan sets out when each task will be done and helps with telling people about it.
+
+Farcargo needs a system that works online as their main place to work. They are a company that does shipping stuff using the internet all over the world. Their system should have a virtual helper who greets people, a billing part, a place to keep data, tools to run operations, and people in charge. Farcargo wants a system where users can feel like they are in a real office.
+
+The Farcargo system has three main parts, the part users see, the programs, and the data store. Users can make an account on the system to see their stuff. The system saves their data in a place only some people can see. Users can then use the company’s services and ask about stuff they want. When they are ready, users can book a delivery service and the system will make a bill for them. Users pay using a code from the bill. The system makes a receipt, and the delivery is set up on the system. The person delivering and the user can see when it will happen and get a reminder two days before.
+
+When the delivery person gets the stuff, they say it is on the way in the system. The system tells the user about this. The user and the boss can see where the stuff is using GPS and cameras on the company’s transport. The delivery person can talk to the boss and user if they need to. When the stuff gets there, the delivery person updates the system to show it is done and adds some pictures. The user says they got it, and the system changes to show it is done. Users can also give feedback to make sure they get good service.
+
+The Farcargo system has hardware, programs, and data. Users need hardware to use the system like computers, phones, or tablets, and extra stuff.
+
+Farcargo’s way of doing business.
+A big picture of how Farcargo’s business works.
+A layout of where stuff is in Farcargo.
+Key stuff for the network.
+How to make it all happen
+The Farcargo system will need a website, a computer program, and a phone app. These will all work together to help all users. The website is the main place where users can do things. The computer and phone apps help people use the system faster and easier. Users can use these apps on many devices.
+
+The system will start in a new office soon. Farcargo’s staff will run the system from there. They will watch and control what happens from a server in Seattle. The apps will be made and given to users to download from safe places like Apple and Google.
+
+The Farcargo system will be made step by step using an agile way. Each step will be done by a special team. This way helps with new ideas and changes. After all the steps are done, the system will be one big thing.
+
+The Farcargo system making job will be given to Eagle sight Information System Developers (ESISD). They will make, set up, and keep the system working. Here are the people in charge:
+* Boss- George Peterson.
+* Other Bosses:
+  + Program Boss- Agnes Haynes.
+  + Security Boss- Whitney Young.
+  + Data Boss- James Hastings.
+  + Set up Boss- Victor Grad.
+  + Website Boss- Wilson Adams.
+  + Set up helper- Danielle Stone.
+
+Big Jobs
+Task                                          Person Doing It                                            How to know it worked
+1. Plan the project                        Boss                                                         Write down what is needed and how long it will take
+1. Find what stuff is needed              Program Boss                                                Make a list of what stuff is needed
+1. Write and check programs               Website Boss, Data Boss, Setup Boss                      Make a good system
+1. Set up the project                      Set up helper, Program Boss                                 Make the system work well
+1. Write down how it works                Program Boss                                                Write down everything about the system
+1. Teach and help people use it           Boss                                                         Everyone knows how to use the system
+1. Watch and fix the system               Boss                                                         The system works right
+1. Talk to people about it                Boss                                                         Answer all questions
+
+Making Plan
+Task                                                        Person Doing It                                            Start Date  End Date    Time taken
+Planning the project                                       Boss                                                         17/02/2022  31/03/2022  6 weeks   
+Find what stuff is needed                                  Program Boss                                                24/02/2022  31/03/2022  5 weeks   
+Write and check programs                                   Website Boss, Data Boss, Setup Boss                      4/04/2022   7/04/2022   3 months  
+Set up the project                                          Set up helper, Program Boss                                 11/07/2022  1/08/2022   3 weeks   
+Write down how it works                                    Program Boss                                                25/07/2022  22/08/2022  4 weeks   
+Teach and help people use it                               Boss                                                         3/08/2022   19/08/2022  2 weeks   
+Watch and fix the system                                   Boss                                                         20/08/2022  20/08/2030  8 years   
+Talk to people about it                                    Boss                                                         20/08/2022  20/08/2030  8 years   
+
+Safety
+Because Farcargo will work online, they need to make sure their system is safe. They need to do things like making sure the data is safe and only some people can see it. Safety is very important when making the system. Some features like secret codes, checking who is coming in, safe internet, and saying who can do what should be used to make the system safe. Farcargo’s system safety features are:
+1. People need to log in once to see everything. They need to prove who they are to see their stuff. This makes it easy to make the system safe.
+2. Safe internet; this makes sure connections are safe for everyone. For example, the internet can be safe for people, connection between people, web links, and how data is sent and got.
+Making sure data is safe; the system should make sure the data is right when it goes back to users. When setting up servers with secret data at the new office, they need to be very safe when moving them. If these devices get lost, it could be very bad for the company and the data could be stolen.
+
+Help with setting it up
+When making the Farcargo system, they need help from things like programs, hardware, places to work,

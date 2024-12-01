@@ -1,0 +1,10 @@
+The making of a website system to keep the university’s info on students and their school records has some dangers that must be talked about in the report about possibility. By using the usual danger check process, we can divide the dangers into two big groups. These are dangers to the project’s continuation and finish and dangers to how good the project works after it's done. 
+The dangers to the project’s continuation and finish are like this:
+* Surprising delays and time spending. There is a chance that making the project happen will be harder than expected, needing more time;
+* People working on the project might get sick and make the work slower;
+* The computers and programs available could stop working.
+The dangers for how well the end product works are like this:
+* The product might not be safe enough to use with student info;
+* The product might cost too much to keep running;
+* The product might not work good enough for what the university wants.
+Problems with time could be seen by comparing how far the project has come with the plan made before starting. Issues with how well it works and what it needs can be found by checking if the product meets the needs for it, and by testing at certain points in the project. Having more time for the project than we first thought could help if there are problems with time or if people or machines break. Fixing problems with how the site works would be harder and mostly be a reaction, if we don’t find and fix them when we test the product.

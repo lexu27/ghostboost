@@ -1,0 +1,26 @@
+Introduction
+Management accounting involves measuring and reporting economic activities of a company. It helps managers make decisions and plan for the future. They rely on this information for forecasting, controlling operations, and evaluating performance. For example, managers use it to decide what to produce, when to make it, and how to produce it. This helps them understand the costs involved in production and the resources needed to achieve company goals. The management accounting system is financial and connects to the financial accounting system. It is crucial for calculating sales costs in the income statement and inventory costs in the balance sheets. This information is essential for managing large organizations effectively. It should be prepared monthly or quarterly and given to managers, including the chief financial officers, for efficient operations. This paper aims to create a detailed report and analysis of the actual financial performance compared to the budgeted performance to present to the chief financial officer.
+
+Summary
+The company's actual net profit of 1036.8 shows it is operating well and can secure finances and investments. However, the budgeted net profit is 153.9 higher due to lower sales volume in the actual performance. This indicates the need for the sales and marketing department to adjust their strategies to increase sales. Comparing actual and budgeted net profit margins, the company earns 15.88% profit margin instead of the budgeted £15.71. This suggests the company is operating optimally and capable of meeting its objectives. The company should focus on reducing sales costs and increasing sales volume to improve profit margins. Analyzing liquidity ratios shows the company can pay off debts without using inventory financing, indicating a good financial position.
+
+Statements of Profit & Loss
+Budgeted and actual statements show sales, costs, and profits for each month. The budgeted plan outlines expected figures, while the actual plan shows real results. Gross profit, operating profit, and net profit are key aspects of evaluating financial performance. Comparing budgeted and actual figures helps identify discrepancies and areas for improvement in managing costs and increasing profits.
+
+Statement of Financial Position
+The statement details the company's assets, liabilities, and equity. It provides a snapshot of the company's financial health and stability. Current and non-current assets, liabilities, and equity are essential for understanding the company's financial position. Analyzing these figures helps identify areas for improvement and financial planning.
+
+Pie Chart Showing Both Performance of the Company
+Visual representations like pie charts can help understand the distribution of costs and profits in the company. They show the proportion of costs related to labor, materials, overheads, and other expenses. Analyzing these charts helps identify cost drivers and areas for cost reduction or efficiency improvement.
+
+Graphs Comparing the Budgeted Against the Actual Performance
+Graphs comparing budgeted and actual sales, gross profit, and operating profit show how the company's performance aligns with expectations. Variations between budgeted and actual figures indicate areas for improvement and adjustment in business strategies.
+
+Profitability Ratio Calculations
+Calculating net profit ratio and operating profit margin helps assess the company's profitability. Comparing budgeted and actual ratios highlights differences in financial performance and guides decision-making for improving profitability.
+
+Liquidity Ratio Calculations
+Liquidity ratios like the quick ratio and current ratio indicate the company's ability to meet short-term obligations. Analyzing these ratios helps evaluate the company's financial flexibility and solvency.
+
+Conclusion
+In conclusion, management accounting plays a vital role in decision-making and planning for companies. It helps managers understand costs, evaluate performance, and make informed decisions. By analyzing financial data and ratios, companies can improve efficiency, reduce costs, and enhance profitability. Incorporating management accounting practices can lead to better financial management and overall success for organizations.

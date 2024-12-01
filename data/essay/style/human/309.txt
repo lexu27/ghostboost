@@ -1,0 +1,36 @@
+Introduction
+The studying of sick people is very important for making health better. For the patients, knowing what is wrong can be hard because they feel bad, may have wrong tests, and worry about being sick. Tests in labs help find out the problem, but sometimes mistakes happen. So, it's good to look at both science and how the patient feels to understand the sickness better. This paper talks about how doctors found out if someone had HIV.
+
+Background Information
+Though not everyone talks about it, there are many diseases around us, like HIV. Many people have HIV all over the world. This virus makes the body weak by attacking certain cells. Even though HIV itself doesn't kill, the body becomes very weak, and other diseases make it harder to stay healthy.
+
+Purpose
+This paper wants to see how doctors can find out if someone has HIV in a pretend case.
+
+Question
+Can we find out if someone has HIV really well?
+
+Hypotheses
+1. Tests in labs can find HIV.
+2. Using many ways to test makes the results better.
+
+Procedure
+Equipment Used
+* Questions about the past.
+* Quick ELISA test kit.
+* PCR test kit.
+* Clean stuff for checking the body.
+
+Procedures
+1. A pretend patient talks to a doctor about their worries. The doctor asks many questions and may do some tests. The aim is to have an idea of what's wrong and decide what to do next.
+2. A lab worker takes a bit of blood and maybe a semen sample for tests.
+3. The blood and semen samples are checked for HIV using special tests.
+
+Results
+This work used three kinds of tests for HIV. First, a doctor asks questions to understand better. Then, the ELISA test results show if there's HIV or not. Lastly, the PCR test measures how much HIV is in the samples.
+
+Discussion
+Support the Hypothesis
+This work looked at how to find HIV in a pretend case. By doing the tests and talking to the doctor, it was shown that using different tests can confirm if someone has HIV.
+
+Explanation and Conclusion

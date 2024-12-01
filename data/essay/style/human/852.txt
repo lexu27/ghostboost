@@ -1,0 +1,5 @@
+Blockchain is like a new tech that people use in many areas. Grech and Camilleri (2017) talk about how blockchain can be used in education, which is still new (p. 8). They say it can help with giving out qualifications, managing student records, and other things in school. Even though it's not used a lot in school yet, blockchain can change how student info is managed and help society a lot.
+
+Using blockchain can make things like checking achievements, validating certificates, and giving out licenses easier. Grech and Camilleri (2017) talk about eight ways to use blockchain in school based on how tech is now (p. 95). It can secure certificates, check accreditation, move credits, and keep learning records. Also, it can help with tracking ideas, getting student payments, funding students, and making IDs better.
+
+The report looks at how blockchain is used in education. They say it's about trust, working together, being clear, being in control, and not needing middlemen. Grech and Camilleri (2017) say we should work on using blockchain more in school together (p. 9). Blockchain can make students stronger and change how school works because it's new and different.

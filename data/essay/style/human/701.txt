@@ -1,0 +1,17 @@
+Data Table.
+Activity                                   Time with thumbs  Time without thumbs
+Writing name in cursive                          5 sec                15 sec
+Taking top off a soda bottle                     4 sec                 4 sec
+Finding page 56 in a book                        6 sec                 8 sec
+Dealing with shoe                                 15 sec               30 sec
+Opening and closing a button                     3 sec                 5 sec
+
+1. Question is: Do thumbs help people do things faster in daily life and survive in emergencies?
+2. I think: Thumbs do not affect how fast we do daily things. Thumbs are important and make us quick.
+3. I think: If I don't have thumbs, life will be hard. Thumbs are needed for many things I do daily.
+4. I thought: Without thumbs, things take longer. It takes double time to do things without thumbs compared to with thumbs.
+5. In the test, we measure time for each task. Time is in seconds.
+6. We compare how long tasks take with and without thumbs.
+7. We see how fast we do things with and without thumbs.
+8. Writing without thumbs took me three times longer. Thumbs help with writing. Opening a soda was same with or without thumbs.
+9. I made a mistake and ruined a book page. Next time, I opened the book faster without thumbs. Writing without thumbs was hard. If I practiced before, I would be faster.

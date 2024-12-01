@@ -1,0 +1,5 @@
+The film "Coded Bias" highlights the issues with facial recognition algorithms, revealing biases towards white faces and prejudiced male developers. These biases hinder equality in race and gender representation, posing a significant threat to the field. The lack of transparency in data processing and decision-making further exacerbates these risks.
+
+To combat bias in facial recognition algorithms, it is suggested to restrict their use in legal and police activities and implement practical improvements. Taking responsibility for decisions and updating databases can help increase efficiency and diversity, addressing bias over time and ensuring operational quality.
+
+While these ideas are vital for responsible technology use, they may not only enhance program accuracy but also alleviate surveillance concerns for marginalized communities. Emphasizing accountability in decision-making and aligning internal and external evaluations can help minimize bias and improve the field's suitability for investigations, addressing key concerns raised by Nakamura and Browne.

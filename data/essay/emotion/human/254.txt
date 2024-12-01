@@ -1,0 +1,15 @@
+Farcargo is a business-to-business online-based logistics service company that conducts national wide and international goods delivery for its clients. Founded in 2006 as a local delivery company in Seattle, it transitioned to national and international deliveries in 2009, focusing on business-to-business operations. The company's services, including booking, billing, payment, and monitoring, are predominantly online.
+
+The company was established by Adams Johnsons, the Chief Executive Officer, with support from five senior management staff. Farcargo operates as an e-commerce business, with its main office in Seattle serving as headquarters. It utilizes online and social media platforms for client interaction and has a website for tracking goods and past transactions. Farcargo prides itself on providing exceptional customer service.
+
+As of December 2021, Farcargo had 18 fully contracted employees and two part-time staff, with a net worth of $258 million. The company recorded a revenue of $27 million in the same year, showing a 5% growth rate over the past three years. Farcargo plans to relocate to a new two-story facility.
+
+Farcargo's mission is to revolutionize global business operations by offering reliable, affordable, and timely cargo transport services. The company aims to lead in online delivery services, promoting regional and international trade for economic growth. Farcargo strives to exceed global courier industry standards.
+
+The company's vision is to be a dependable and adaptable business partner, offering flexible operations, delivery hours, payment methods, transportation modes, and goods variety. Farcargo aims to provide tailored services to meet diverse client needs.
+
+Farcargo is an online business-to-business cargo courier service provider, offering transport services within and beyond national borders through road, air, and water transport modes. The company caters to various clients, including one-time and regular customers, as well as government contracts.
+
+Headquartered in Seattle, Farcargo operates internationally with regional offices in 40 countries. The company serves clients across seven continents, primarily in the USA, Asia, and Europe.
+
+Farcargo's information system infrastructure consists of user interface, applications, business processes, and a secure database supported by hardware, system software, networking, and data centers. The user interface features vibrant graphics and functions like registration, contact information, services, and inquiries. Applications allow clients to book shipments, monitor cargo, and access past records, while business processes streamline billing, scheduling, and deal closure. The database stores critical information securely, including customer details, financial data, and equipment records.

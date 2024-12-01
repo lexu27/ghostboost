@@ -1,0 +1,13 @@
+Internal logistical integration involves aligning and coordinating internal processes and systems within a firm to enhance efficiency and effectiveness in logistical operations. However, firms often face barriers hindering this integration, falling into five categories: technological, cultural, organizational, informational, and financial.
+
+Technological barriers, the first category, arise from the complexity of integrating new technologies into existing systems. For example, my company's attempt to implement a new warehouse management system faced resistance due to lack of training and familiarity with the technology, posing challenges to efficiency.
+
+Cultural barriers, the second category, stem from differences in values and behaviors among employees. In my previous organization, divergent cultural values among employees in different countries led to communication breakdowns and conflicts, hampering logistical process integration.
+
+Organizational barriers, the third category, result from siloed thinking in large organizations with multiple departments. Lack of cross-functional collaboration between procurement and production departments, for instance, led to delays in raw material supply, impacting overall organizational performance.
+
+Informational barriers, the fourth category, occur due to gaps in data sharing and quality. In my previous workplace, scattered data across systems caused delays and errors in inventory tracking, affecting supply chain integration.
+
+Financial barriers, the final category, limit firms' investments in infrastructure and human resources needed for seamless integration. Small businesses, for instance, may struggle to allocate funds for advanced logistics systems, leading to inefficiencies and increased costs.
+
+In summary, firms encounter technological, cultural, organizational, informational, and financial barriers in achieving internal logistical integration. Overcoming these barriers is vital for enhancing efficiency and effectiveness in logistical operations.

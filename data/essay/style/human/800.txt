@@ -1,0 +1,4 @@
+In this study, the researchers used math to find connection between drinking and the place where students live. They looked at five things: problems like robbery in the area, neighbors looking out for each other, drugs being sold or used, if people get along in the area, and feeling safe at night in the neighborhood. 
+From the first table, R square is 0.026, which tells us 2.6% of why students drink can be explained by the things in the neighborhood. Adjusted R square says only 0.3% of why students drink can be explained by these things when we consider more stuff.
+In the second table, the p-value is 0.342, meaning the math is not very helpful in explaining why students drink with these things. 
+From the third table, feeling safe, crimes happening, and good relationships have a small positive link to how often students drink. Drugs in the area and trust in neighbors have a small negative link to drinking.
