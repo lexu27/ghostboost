@@ -68,7 +68,8 @@ exp_to_data = pickle.load(open("symbolic_data_gpt", "rb"))
 t_data = pickle.load(open("t_data", "rb"))
 
 print("Loading eval data...")
-exp_to_data_eval = pickle.load(open("symbolic_data_eval", "rb"))
+exp_to_data_eval = pickle.load(
+    open("symbolic_data_eval", "rb"))
 t_data_eval = pickle.load(open("t_data_eval", "rb"))
 
 roberta_tokenizer = RobertaTokenizer.from_pretrained("roberta-base")
@@ -278,7 +279,8 @@ if __name__ == "__main__":
 
     files = generate_dataset_fn(lambda x: x)
     labels = generate_dataset_fn(
-        lambda file: 1 if any([m in file for m in ["gpt", "claude"]]) else 0
+        lambda file: 0 if any(
+            [m in file for m in ["human", "human_aug"]]) else 1
     )
 
     def get_roberta_predictions(data, train, test, domain):
@@ -910,9 +912,6 @@ if __name__ == "__main__":
     if args.ghostbuster_vary_training_data:
         exp_to_data_three = pickle.load(open("symbolic_data_gpt", "rb"))
 
-        # import pdb
-        # pdb.set_trace()
-
         train_indices = indices_dict["gpt_train"] + indices_dict["human_train"]
         test_indices = indices_dict["gpt_test"] + indices_dict["human_test"] + \
             indices_dict["claude_test"] + indices_dict["gpt_prompt1_test"] + indices_dict["gpt_prompt2_test"] + \
@@ -925,13 +924,11 @@ if __name__ == "__main__":
         # )
 
         scores = []
-        # train_sizes = [int(125 * (2**i))
-        #                for i in range(6)] + [len(train_indices)]
-        train_sizes = [50, 100, 250, 500, 1000, 1500]
-
+        # train_sizes = [50, 100, 250, 500, 1000, 1500]
+        train_sizes = [1000]
         # import pdb
         # pdb.set_trace()
-        print(train_sizes)
+        # print(train_sizes)
 
         for size in tqdm.tqdm(train_sizes):
             print(f"Now running size: {size}")
@@ -945,9 +942,9 @@ if __name__ == "__main__":
                 indices=curr_train_indices,
             )
             data = normalize(get_featurized_data(curr_best_features))
-
+            import pdb
+            pdb.set_trace()
             curr_score_vec = []
-            print(data[curr_train_indices].shape)
 
             model = LogisticRegression()
             model.fit(data[curr_train_indices], labels[curr_train_indices])

@@ -1,0 +1,30 @@
+introduction
+The detailed investigation of clinical cases is a decisive need for a health system for improving the quality of life of the population and the improvement in public health.Own deteriorating health, feelings of stigmatization and the possibility of inaccurate clinical tests is associated that laboratory tests are a scientifically reasonable practice to refine the diagnosis as far as possible, but the possibility of a human or instrumental error is never excluded.Comprehensive approach to clarify the diagnosis using a synthesis of scientifically based and subjective aspects of the course of the disease. In this article, an example of such a comprehensive approach is evaluated in which a case study for HIV infection is described.
+Background information
+Although it is not a social problem, especially in view of COVID-19, humanity is exposed to several pandemics every day. A HIV of these pandemics is HIV, since a large number of people of this infection is exposed to: According to statistical studies, the number of HIV is-Positive patients by 2020 worldwide exceed (Unaids, 2021).During this disease, a pathogen from the class of retrovires influences the immune and b -lymphocytes of the patient, which leads to a lower immunity. It is true that HIV was never the cause of the death of a person, but death due toa critical immune suppression and the development of opportunistic diseases.
+Purpose
+The purpose of this study is to determine a comprehensive approach to diagnosing HIV in a hypothetical patient.
+Ask
+Can an HIV infection be really extensively recognized in a suspected patient?
+Hypotheses
+1. HIV infection can be proven by single laboratory tests.
+2. The use of the comprehensive method increases the reliability of the diagnostic results.
+Proceedings
+Devices used
+* Questionnaire for history.
+* Fast Elisa test kit.
+* PCR test kit.
+* Sanitary kit for physiological and clinical examination.
+Proceedings
+1. A hypothetical patient comes to see a general practitioner and talks about his concerns.to determine possible (but not accurate) diagnosis and transfer to the following diagnostic invadances.
+2. The laboratory technician sterilizes the area for the blood sample, manages an injection and draws a few milliliters of blood for analysis. The puncture site is treated with a disinfectant.
+3. The blood sample taken in the second step is used for PCR tests.
+Results
+This laboratory thesis examines three types of HIV tests. The first step uses a patient questionnaire that is shown in Figure 1 below. It is an extensive questionnaire that is filled out by a general practitioner to clarify the diagnosis.Elisa tests given; Figure 2 shows that the diagnosis of HIV by Elisa is visually implemented with a control for which it is certainly known that HIV is not available. Figure 3 shows the results of the PCR test for HIV and shows,that the value obtained is significantly higher than the norm.
+Figure 1. Example of a patient questionnaire for the HIV prelude and the anamnesis (WHO, N.D.).
+Figure 2. Example of Elisa results for the HIV infection (HIV Elisa, N.D.).
+Figure 3. Example of a PCR Assay result for HIV (POZ, N.D.).
+discussion
+Support the hypothesis
+This laboratory work examined the possibility of a HIV infection in a hypothetical patient. The diagnosis was examined using three variants of the test, a questionnaire and conversation with therapists, Elisa tests and PCR tests. A summary of these results shows the confirmation of both hypotheses, as was actually diagnosed with two different tests.
+Explanation and conclusion

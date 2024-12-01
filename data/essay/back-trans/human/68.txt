@@ -1,0 +1,11 @@
+Deductive thinking includes the construction and development of solid relationships with cause and effect. It is remarkable that the connection is established between two facts or a point and the idea of ​​how it will affect the future (Besnard & Hunter, 2018)..
+Example:
+1. All metals are heavy
+2. Tin is a metal
+3. Tin is heavy
+A solid argument must have a valid form and a real room. Applicable arguments can be inappropriate, but they will have false assumptions.
+Example:
+1. All dogs are cats
+2. All mice are dogs
+3. All mice are cats
+What makes this a valid statement is not that it has trustworthy premises and a proper conclusion, but the logical necessity of the judgment in view of the two assumptions. The argument would also be valid if the premises and the conclusion were wrong.Important to determine that the purpose of the argument is to establish the truth of a judgment. This goal does not achieve an invalid argument, so it cannot be considered solid (Besnard & Hunter, 2018). A solid argument has a valid formAnd a real premises; therefore it cannot be invalid in all cases. If the argument is invalid, the beliefs do not play a role, and in fact only the conclusion remains. This means that there is no argument in this case, especially oneSolid.

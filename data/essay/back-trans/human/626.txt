@@ -1,0 +1,13 @@
+At the top is a scheme of the electron transport chain (etc.) in a typical animal cell.q).
+How does the transmission of electrons from one carrier to another in etc. create a proton gradient via the inner mitochondria membrane?
+The electron transport along the transport chain is associated with a redistribution of loads in the mitochondrial membrane, which leads to excessive or inadequate potential in certain areas. Protons tend to compensate for the insufficient potential so that they migrate to a reduced load or with placesRemove increased load.
+There are poisons that can be blocked or hinder FMN or FE-S in complex II that accept electrons from FADH 2.?
+The FMNH2 poisoning is expected to have a more harmful influence on the proton gradient, since in this case one of the main chains of electron migration within the membrane is disturbed.Synty bunny are involved, so that the deactivation of FMNH2 would lead to a greater extent to the loss of this proton effect.
+Would the poisons described above increase the oxygen consumption, reduce it or have no effect.
+Oxygen consumption takes place in one of the last phases, especially in complex IV. The poisoning one of the phases from the previous assignment affects electron migration and makes the effect of the complex IV ineffective. This is implemented as a cascade reaction in which the problem long before theOxygen consumption.
+Which electrons have more energy - those from Q or those of Cytochrom C (cyt C) accepted and how do you know?
+Q takes electrons (two parts) from the first complex and two electrons from the second complex; the total amount is four.cyt C only two electrons from the third complex. We can assume that Q has a higher energy than cyt C.
+Which and in which cell compartments are electrons pumped during the electron transport during cell breathing?
+Q receives electrons from FMNH2 and FAD (II) and gives them QH2, whereupon it migrated into the complex (III), while cyt C receives electrons from the complex III and gives them to complex IV.
+What would affect ATP production to declare the pH value within the mitochondrial matrix.
+If the intrami -ochondrial matrix reduces the acidity, this leads to a reduction in the number of free protons inside. In theoremic, the mitochondria transmits large amounts of protons into the intermbrane space, which leads to the formation of ATP.

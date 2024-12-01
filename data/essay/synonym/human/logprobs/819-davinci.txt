@@ -1,0 +1,15 @@
+Behaviour 12.079294
+al 0.8613164
+ĠEconomic 7.037549
+Ġscience 10.288662
+ĠPre 11.939356
+jud 3.7721095
+ice 0.40517265
+Ġ/ 6.5786505
+Ġheuristic 12.551119
+Ġin 5.282056
+ĠOrchard 18.019182
+Ġapple 7.1341505
+Ġtree 0.031553905
+ĠCartesian 12.41688
+Ġproduct 0.29722184

@@ -1,0 +1,10 @@
+The creation of a web -based system for storing the information from the university about students and its transcripts represents certain risks that have to be treated in the feasibility report. Using the standard process for evaluating the standard risk, it is possible to distinguish the risks into two large groupsare risks for the continuation and completion of the project and the risks for the performance of the end product after completing the project.
+The risks for the continuation and completion of the project are as follows:
+* Unforeseen delays and time editions. It is possible that the implementation of the project is more complex than expected and requires more time.
+* People who participate in the project can get sick and slow production.
+* The available hardware and software cannot work.
+The risks for the performance of the end product are as follows:
+* The product may not be safe enough to be able to work with personal student data.
+* The product would not be economically carried out;
+* The product would not provide the requirements of the university sufficiently.
+Temporary problems have been identified by comparing the progress with the timeline that was developed before the start of the project. Functional and requirements risks can be discovered by agreement with the product against its requirements and tests for certain project milestones. Potential time restrictions and personnel/Hardware breaks can be taken into account by assigning more time to the project than initially estimated to enable the replacement. The combating of the risks associated with the performance of the location would be more difficult and have largely a reactionary nature should be during theProduct test phase cannot be discovered and remedied.

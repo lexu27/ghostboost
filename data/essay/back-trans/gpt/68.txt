@@ -1,0 +1,13 @@
+Deductive thinking and well -founded arguments are two essential components of effective and convincing argument.
+Deductive thinking refers to the logical process of the trains of a specific conclusion based on a series of premises or general principles. It is based on the principle that the conclusion must also be true if the premises are true, for exampledeductive argument:
+Premises 1: All apples are fruits.
+Premise 2: I have an apple.
+Conclusion: That's why I have a fruit.
+In this case, of course, the conclusion follows from the specified premises and makes it a logically valid argument. However, the mere logical validity is not sufficient to determine the truth of an argument.
+Ton arguments are deductive arguments that not only have a valid logical form, but also contain real premises. In the essential arguments that are both logically valid and objectively correct.have, since an argument can be valid and has false premises, which leads to a wrong conclusion. For example: Example:
+Premises 1: All dogs can fly.
+Premise 2: My pet Max is a dog.
+Conclusion: So Max can fly.
+Although this argument follows a valid logical form, it is not solid due to the inaccuracy of the premises. So it cannot determine the truth of the conclusion.
+The purpose of the argument is to convince others and to determine the truth of a judgment or an assertion. In any case, presenting a logical and well -founded argument, they can effectively convince others of the validity and truthfulness of their position.Consistency, but also ensures that the premises are based on exact information and reliable evidence.
+In summary, it can be said that deductive argument and well -founded arguments are decisive elements of convincing argumentation. Deductive thinking includes a specific conclusion from a number of rooms, while solid arguments require both logical validity and truthfulness of the premises.And can effectively lead to sensible discourse and debates, individuals can determine the truth.

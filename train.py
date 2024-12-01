@@ -41,7 +41,14 @@ essay_dataset = [
     Dataset("normal", "data/essay/human"),
     Dataset("normal", "data/essay/gpt"),
 ]
-
+essay_synonym_dataset = [
+    Dataset("normal", "data/essay/synonym/human"),
+    Dataset("normal", "data/essay/synonym/gpt"),
+]
+essay_back_trans_dataset = [
+    Dataset("normal", "data/essay/back-trans/human"),
+    Dataset("normal", "data/essay/back-trans/gpt"),
+]
 eval_dataset = [
     # Dataset("normal", "data/wp/claude"),
     # Dataset("author", "data/reuter/claude"),
@@ -83,6 +90,9 @@ def get_featurized_data(generate_dataset_fn, best_features):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--generate_symbolic_data", action="store_true")
+    parser.add_argument("--generate_symbolic_data_back", action="store_true")
+    parser.add_argument("--generate_symbolic_data_synonym",
+                        action="store_true")
     parser.add_argument("--generate_symbolic_data_four", action="store_true")
     parser.add_argument("--generate_symbolic_data_eval", action="store_true")
 
@@ -113,7 +123,9 @@ if __name__ == "__main__":
         # *reuter_dataset,
         *essay_dataset,
     ]
-    generate_dataset_fn = get_generate_dataset(*datasets)
+    generate_dataset_fn = get_generate_dataset(*essay_dataset)
+    generate_dataset_fn_synonym = get_generate_dataset(*essay_synonym_dataset)
+    generate_dataset_fn_back = get_generate_dataset(*essay_back_trans_dataset)
 
     if args.generate_symbolic_data:
         generate_symbolic_data(
@@ -125,6 +137,28 @@ if __name__ == "__main__":
 
         t_data = generate_dataset_fn(t_featurize)
         pickle.dump(t_data, open("t_data", "wb"))
+
+    if args.generate_symbolic_data_back:
+        generate_symbolic_data(
+            generate_dataset_fn_back,
+            max_depth=3,
+            output_file="symbolic_data_gpt_back",
+            verbose=True,
+        )
+
+        t_data = generate_dataset_fn(t_featurize)
+        pickle.dump(t_data, open("t_data_back", "wb"))
+
+    if args.generate_symbolic_data_synonym:
+        generate_symbolic_data(
+            generate_dataset_fn_synonym,
+            max_depth=3,
+            output_file="symbolic_data_gpt_synonym",
+            verbose=True,
+        )
+
+        t_data = generate_dataset_fn(t_featurize)
+        pickle.dump(t_data, open("t_data_synonym", "wb"))
 
     if args.generate_symbolic_data_eval:
         generate_dataset_fn_eval = get_generate_dataset(*eval_dataset)

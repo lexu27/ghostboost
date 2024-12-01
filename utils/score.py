@@ -14,7 +14,8 @@ def k_fold_score(X, labels, indices=None, k=8, precision=10):
 
     score_sum = 0
     for i in range(k):
-        train = np.concatenate([np.array(k_split[j]) for j in range(k) if i != j])
+        train = np.concatenate([np.array(k_split[j])
+                               for j in range(k) if i != j])
         model = LogisticRegression(C=10, penalty="l2", max_iter=1000)
         model.fit(X[train], labels[train])
 

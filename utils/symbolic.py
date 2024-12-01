@@ -149,8 +149,6 @@ def get_all_logprobs(
         sorted(file_names, key=lambda x: int(x.split("/")[-1].split(".")[0])))
 
     for i, file in enumerate(to_iter):
-        # if i > 50:
-        #     break
         if "logprobs" in file:
             continue
 

@@ -1,0 +1,19 @@
+introduction
+The multimedia developers are mainly concerned about the sample resolution and quantization when scanning a full color photos in digital processing. Digitize digitized images both spatially and in the amplitude.and quantization converted into digital form. The spatial resolution of a digitized image is influenced by the sample rate, while the amount of grayscale is controlled in a digital snapshot by the quantization level. During the processing of an image, the size of a viewed image is shown as a digital value(Torii, 2018).
+Quantization level
+The level of quantization of the image should be high enough so that people can recognize small shadow fluctuations. If an image is quantized with inadequate levels of brightness, false outlines are the main problem. The authors discuss the color image quantization algorithms that are adjustable and rejuvenated.It is to show high -quality color productions with small frame buffers. If the examination, various color images that normally need a frame buffer with 15 bit for each pixel can be quantized on 10 or less bit with a low subjective deterioration.that were generated with even quantization (Torii, 2018).
+The task of the color image quantization is divided into four stages:
+1. Get color statistics from the original picture
+2. Use color statistics to select a color card
+3 .. mapping original colors in the color card to your closest neighbors
+4. New and quantization of the original image.
+Sampling and quantification
+If the output of the camera or the sensor is not already digital, the image is recorded by a sensor (e.g. a camera) and converted using an analogous to digital converter.And the computer converts the images into digital form. It converts the continuous image in digital form by digitizing the coordinate and amplitude values.
+The digital image indicates the response value and the spatial position of the image. The analogue image represents a continuous signal, while the digital image is a discrete value., 2018).
+When sampling, a line is vertical in certain intervals from bottom to top; remove the one-dimensional scanning of the gray value with every horizontal line. The discrete signal is then obtained by scanning the one-dimensional scan line signal at a certain interval.
+The sampling takes place in two types, uniform sampling and uneven sampling.
+1. The image is evenly divided into MN blocks after even rehearsal.
+2. The uneven sampling includes increasing the sample frequency, in which details have to be displayed, while you remove in areas with minor images. To create precise photographs, it is necessary if, for exampleRoad or the river increased and at the same time reduces the samplace on the straight road.
+Diploma
+Black -White -Image Processing, gray image processing and color image processing are the three types of image processing. Brightness, contrast and color channel are all essential image properties.
+Final edition of the pictures.
