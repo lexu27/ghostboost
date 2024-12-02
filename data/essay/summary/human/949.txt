@@ -1,0 +1,7 @@
+Decision Support Systems (DSS) were originally designed as computerized tools to assist decision-makers by collecting and analyzing data, rather than making decisions for them. Business Intelligence (BI), a broader term encompassing analytical tools and applications, stemmed from DSS but has evolved to be more widely utilized across various industries. Reporting plays a pivotal role in BI, necessitating users to identify areas needing attention before applying analytical techniques.
+
+DSS serves as a computer-based system that aids in decision-making processes, whereas BI focuses on organizing and managing data within a company. DSS typically involves manual processing and requires more time for implementation, while BI relies on automated analysis and demands less manual intervention.
+
+Analytics, which entails deriving insights from historical data, now integrates technology, scientific methodologies, and statistics to devise practical solutions for specific problems. Its significance spans industries, facilitating the development of reports, predicting future outcomes, and streamlining operations through technological platforms.
+
+In the healthcare sector, analytics plays a crucial role in various applications such as diagnostics, fraud detection, and addressing issues like falls among the elderly population. These analytics-driven interventions help mitigate risks associated with increased costs and disability concerns, showcasing the transformative power of data-driven decision-making in addressing complex challenges across diverse fields.

@@ -57,6 +57,8 @@ if __name__ == "__main__":
                         action="store_true")
     parser.add_argument("--generate_symbolic_data_style",
                         action="store_true")
+    parser.add_argument("--generate_symbolic_data_summary",
+                        action="store_true")
     parser.add_argument("--generate_symbolic_data_four", action="store_true")
     parser.add_argument("--generate_symbolic_data_eval", action="store_true")
 
@@ -116,6 +118,10 @@ if __name__ == "__main__":
         Dataset("normal", "data/essay/style/human"),
         Dataset("normal", "data/essay/style/gpt"),
     ]
+    essay_summary_dataset = [
+        Dataset("normal", "data/essay/summary/human"),
+        Dataset("normal", "data/essay/summary/gpt"),
+    ]
 
     eval_dataset = [
         Dataset("normal", "data/essay/claude"),
@@ -135,6 +141,7 @@ if __name__ == "__main__":
     generate_dataset_fn_back = get_generate_dataset(*essay_back_trans_dataset)
     generate_dataset_fn_emotion = get_generate_dataset(*essay_emotion_dataset)
     generate_dataset_fn_style = get_generate_dataset(*essay_style_dataset)
+    generate_dataset_fn_summary = get_generate_dataset(*essay_summary_dataset)
 
     if args.generate_symbolic_data:
         generate_symbolic_data(
@@ -190,6 +197,17 @@ if __name__ == "__main__":
 
         t_data = generate_dataset_fn_style(t_featurize)
         pickle.dump(t_data, open("t_data_style", "wb"))
+
+    if args.generate_symbolic_data_summary:
+        generate_symbolic_data(
+            generate_dataset_fn_summary,
+            max_depth=3,
+            output_file="symbolic_data_gpt_summary",
+            verbose=True,
+        )
+
+        t_data = generate_dataset_fn_summary(t_featurize)
+        pickle.dump(t_data, open("t_data_summary", "wb"))
 
     if args.generate_symbolic_data_eval:
         generate_dataset_fn_eval = get_generate_dataset(*eval_dataset)

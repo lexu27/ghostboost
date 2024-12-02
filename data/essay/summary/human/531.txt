@@ -1,0 +1,11 @@
+The Financial Accounting Standards Board (FASB) took a significant step in alleviating the impact of the COVID-19 pandemic on private companies by issuing ASU 2020-05, which deferred the effective dates of Topic 606 and Topic 842 by one year. This move provided much-needed relief to companies grappling with the challenges posed by the global crisis.
+
+One of the key hurdles faced by preparers and auditors was the adoption of the new revenue recognition policy. The transition to the updated standards brought about challenges due to the lack of detailed implementation guidelines compared to Generally Accepted Accounting Principles (GAAP). Private companies encountered difficulties in recording revenues when performance obligations were satisfied, managing variable consideration, and meeting the heightened disclosure requirements.
+
+Similarly, Topic 842 presented its own set of issues for firms, particularly concerning the identification of embedded leases, ensuring data accuracy, and establishing standardized procedures for new leases, renewals, and modifications. The changes in lease accounting mandated increased disclosures, potentially influencing investor decisions.
+
+The ambiguity and open-ended nature of the new standards left room for interpretation, further complicating their practical application. Companies struggled with the implementation of the accounting standards in practice as the absence of specific rules added to the complexity of compliance.
+
+Moreover, the theoretical foundation of the new standard diverged from GAAP, leading to confusion in interpretation. The discrepancies between the two frameworks posed a challenge for companies seeking to align their practices with the updated guidelines.
+
+In conclusion, while the deferral of effective dates offered temporary respite, the challenges associated with the new revenue recognition and lease accounting standards underscore the importance of clear implementation guidance and comprehensive support for private companies navigating these changes.

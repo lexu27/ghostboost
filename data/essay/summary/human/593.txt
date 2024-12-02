@@ -1,0 +1,7 @@
+Efficient management of student transcripts is essential for universities, but it can often be a cumbersome and bureaucratic process. Thanks to technological advancements, this burden can be alleviated through streamlined processes. Database management systems play a pivotal role in organizing student transcripts and storing crucial information regarding students, faculties, and departments. 
+
+Unique student identifiers are key in preventing confusion and facilitating smooth transitions between courses. By having a system in place that allows for easy access to quantitative data related to various aspects such as courses, faculties, groups, and individual students, employees can quickly retrieve necessary information without resorting to manual applications and physical searches.
+
+However, with the benefits of such systems come security concerns. The risk of data leaks necessitates limiting stored data to only basic student information. Storing sensitive student work data within the system could lead to copyright and security risks. It is crucial to securely store papers separately from the database, using identification numbers for retrieval purposes.
+
+To address these security concerns effectively, it is vital to restrict information within the system entities. By doing so, the workflow can be simplified, and potential issues mitigated. Ultimately, by embracing technology and implementing secure protocols, universities can enhance their transcript management processes while safeguarding sensitive information effectively.

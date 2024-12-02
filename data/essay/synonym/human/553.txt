@@ -1,0 +1,19 @@
+Introduction
+The multimedia developers are primarily concerned about the example resolution and quantization when scanning a full-color photograph in digital processing. Digital processing digitizes images both spatially and in amplitude. The analog video signal is sampled and quantified by the digitizer. Continuous data is converted to digital form using sampling resolution and quantification. The spatial resolution of a digitized image is influenced by the sampling rate, while the amount of grey levels in a digital snapshot is regulated by the quantification level. During processing an image, the size of a sampled image is presented as a digital value (Torii, 2018).
+Quantification Levels
+The quantification levels of the image should be high enough for people to detect small shade variations. When an image is quantified with insufficient brightness levels, incorrect outlines are the primary issue. The authors discuss color picture quantization algorithms that are adjustable and narrowed. The aim of the research is to demonstrate high-quality color reproductions with small frame buffers. According to the research, various color images that typically require a frame buffer with 15 bits for every pixel could be quantified to 10 or fewer bits with little subjective deterioration. The images produced are usually superior to those created using uniform quantization (Torii, 2018).
+The Task of Color Picture Quantization is divided into Four Stages:
+1. Obtaining color statistics from the original image
+2. Using color statistics to choose a color map
+3. Mapping original colors in the color map to their nearest neighbors
+4. Redrawing and quantifying the original image.
+Sampling and Quantification
+If the camera or sensor’s output is not already digital, the image is recorded by a sensor (e.g., a camera) and converted using an analog-to-digital converter. The image to be processed initially is saved in a computer as a continuous voltage waveform then the computer converts the images into digital form. It converts the continuous image to digital form by digitalizing the coordinate and amplitude values.
+The digital image provides the response value and spatial position of the image. The analog image represents a continuous signal, while the digital image represents a discrete value. Sampling contributes to a spatial resolution, and quantification provides a gray image resolution (Torii, 2018).
+In sampling, a line is can from the bottom to the top vertically at certain intervals; on each horizontal line, remove the one-dimensional scanning of gray value. The discrete signal is then obtained by sampling the one-dimensional scanning line signal at a specific interval.
+Sampling is done in two ways, uniform sampling and non-uniform sampling.
+1. The image is uniformly divided into MN blocks after uniform sampling. The sampling function is used to determine the sample result value for each image block, and the most commonly used sampling function is to obtain the regional average value.
+2. Uneven sampling involves increasing the sampling frequency where details must be represented while decreasing in areas with minor picture changes. To produce accurate photographs, for example, when sampling on an image map, it is necessary to raise the sampling frequency at the turning point of the road or river while decreasing the sampling frequency on the straight road. More pixels produce an image of high resolution (Torii, 2018).
+Conclusion
+Black and white image processing, gray image processing, and color image processing are the three kinds of image processing. Brightness, contrast, and color channel are all vital image characteristics.
+Final output of the images.

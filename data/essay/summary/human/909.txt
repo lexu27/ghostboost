@@ -1,0 +1,9 @@
+Rucol General Merchandise is in the process of implementing an Enterprise Resource Planning (ERP) system and is in need of a storage solution that aligns with specific criteria. With employees working remotely two days a week and over fifty branches operating six days a week, the company requires a reliable and efficient storage system.
+
+When considering potential storage solutions, options such as cloud storage, Solid State Drives (SSDs), and Hard Disk Drives (HDDs) come into play, each offering distinct advantages and disadvantages. SSDs and HDDs are both cost-effective choices that provide offline data storage capabilities, making them suitable for managing sensitive data within the organization.
+
+In the case of Rucol General Merchandise, HDDs stand out for their ability to offer large storage capacities at a lower cost. This makes them particularly well-suited for meeting the company's data backup needs effectively. On the other hand, cloud storage, notably Google Drive, presents advantages in terms of security, accessibility, and reliability, all for a monthly fee of $300 for thirty terabytes of storage.
+
+To create a comprehensive data management solution for Rucol, a combination of cloud storage for day-to-day operations and HDD backups for secure data storage is recommended. This integration ensures that the company benefits from the security and accessibility of cloud storage while also having the reliability of physical backups in place, covering all bases for effective data management.
+
+In conclusion, by leveraging a mix of cloud storage and HDD backups, Rucol General Merchandise can establish a robust storage solution that meets its specific requirements, ensuring data security, accessibility, and reliability across its operations.
